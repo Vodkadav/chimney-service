@@ -1,0 +1,265 @@
+{
+  "Metadata": {
+    "title": "Riviera Hearth — Limpieza de Chimeneas para Hoteles en Cancún",
+    "description": "Limpieza premium de chimeneas, hogares y ventilación para hoteles y resorts en Cancún y la Riviera Maya. Certificados, asegurados y discretos, sin molestar a sus huéspedes.",
+    "servicesTitle": "Servicios",
+    "servicesDesc": "Deshollinado, inspección de seguridad, eliminación de creosota, limpieza de ventilación y planes de mantenimiento para hoteles de la Riviera Maya.",
+    "galleryTitle": "Galería",
+    "galleryDesc": "Un vistazo a los resorts, lounges y espacios que mantenemos limpios, seguros y libres de humo en Cancún y la Riviera Maya.",
+    "beforeAfterTitle": "Antes y Después",
+    "beforeAfterDesc": "Vea la diferencia que logra nuestro servicio de chimeneas y ventilación en breves videos de antes y después.",
+    "aboutTitle": "Nosotros",
+    "aboutDesc": "Riviera Hearth es una empresa de limpieza de chimeneas y ventilación enfocada en la hostelería, al servicio de Cancún y la Riviera Maya.",
+    "contactTitle": "Contacto",
+    "contactDesc": "Solicite una cotización gratuita o agende un servicio. Llámenos, escríbanos por email, WhatsApp o envíenos un mensaje."
+  },
+  "Nav": {
+    "brand": "Riviera Hearth",
+    "home": "Inicio",
+    "services": "Servicios",
+    "gallery": "Galería",
+    "beforeAfter": "Antes y Después",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "quote": "Cotizar",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "Hero": {
+    "eyebrow": "Cancún · Riviera Maya",
+    "title": "Chimeneas impecables para los mejores hoteles de la Riviera Maya.",
+    "subtitle": "Limpieza certificada de chimeneas, hogares y ventilación diseñada para la hostelería, realizada con discreción, según su agenda y sin molestar a sus huéspedes.",
+    "ctaPrimary": "Solicitar cotización gratis",
+    "ctaSecondary": "Ver nuestros servicios",
+    "trust": "La confianza de más de 200 hoteles y resorts en Cancún y la Riviera Maya."
+  },
+  "Stats": {
+    "resorts": "Hoteles y resorts atendidos",
+    "years": "Años en la Riviera Maya",
+    "response": "Disponibilidad de emergencia",
+    "certified": "Técnicos certificados"
+  },
+  "ServicesPreview": {
+    "eyebrow": "Lo que hacemos",
+    "title": "Cuidado integral de chimeneas y ventilación",
+    "subtitle": "Un solo equipo especializado para cada ducto, hogar, extracción de cocina y sistema de ventilación de su propiedad.",
+    "cta": "Ver todos los servicios"
+  },
+  "Services": {
+    "title": "Nuestros servicios",
+    "subtitle": "Cuidado integral de chimeneas, hogares y ventilación para hoteles, resorts y restaurantes.",
+    "intro": "Desde el deshollinado de rutina hasta la certificación de seguridad completa, mantenemos cada hogar, ducto y sistema de extracción de su propiedad limpio, eficiente y en regla, protegiendo a sus huéspedes, a su personal y a su reputación.",
+    "items": {
+      "sweeping": {
+        "title": "Deshollinado de chimeneas",
+        "description": "Limpieza minuciosa y sin polvo de ductos y hogares con equipo profesional que no deja rastro en sus áreas de huéspedes."
+      },
+      "inspection": {
+        "title": "Inspección y certificación de seguridad",
+        "description": "Inspección con cámara de cada ducto, con un informe de seguridad documentado y certificado de cumplimiento para sus registros y aseguradoras."
+      },
+      "creosote": {
+        "title": "Eliminación de hollín y creosota",
+        "description": "Eliminación de la acumulación inflamable de creosota y hollín, la principal causa de incendios de chimenea, restaurando un tiro seguro y eficiente."
+      },
+      "ventilation": {
+        "title": "Limpieza de ventilación y ductos",
+        "description": "Limpieza profunda de campanas de extracción, ductos y sistemas de ventilación para mejorar la calidad del aire y cumplir las normas contra incendios."
+      },
+      "caps": {
+        "title": "Sombreretes, forros y matachispas",
+        "description": "Suministro e instalación de sombreretes, forros y matachispas para mantener fuera la lluvia, la fauna y las brasas todo el año."
+      },
+      "emergency": {
+        "title": "Respuesta de emergencia 24/7",
+        "description": "¿Ducto obstruido, humo en una suite o una inspección reprobada antes de abrir? Nuestro equipo de respuesta prioritaria está disponible las 24 horas."
+      },
+      "maintenance": {
+        "title": "Planes de mantenimiento",
+        "description": "Mantenimiento programado y sin complicaciones, con visitas por temporada, reservación prioritaria e informes transparentes en toda su propiedad."
+      }
+    }
+  },
+  "Features": {
+    "title": "Por qué los hoteles eligen Riviera Hearth",
+    "subtitle": "Estamos diseñados en torno a cómo funciona la hostelería, no al revés.",
+    "items": {
+      "certified": {
+        "title": "Certificados y asegurados",
+        "description": "Técnicos totalmente certificados y seguro de responsabilidad civil integral, con cumplimiento documentado en cada visita."
+      },
+      "hospitality": {
+        "title": "Nivel hostelería",
+        "description": "Cuadrillas uniformadas y con antecedentes verificados que trabajan con discreción entre los huéspedes y protegen cada superficie."
+      },
+      "response": {
+        "title": "Respuesta rápida",
+        "description": "Agenda flexible y cobertura de emergencia 24/7 para que un problema de chimenea nunca retrase una apertura ni moleste una estancia."
+      },
+      "bilingual": {
+        "title": "Equipo bilingüe",
+        "description": "Un equipo totalmente bilingüe (español/inglés) que se comunica con claridad tanto con sus gerentes como con sus huéspedes."
+      }
+    }
+  },
+  "Process": {
+    "title": "Cómo funciona",
+    "subtitle": "Un proceso sencillo y transparente, de la primera llamada al certificado final.",
+    "steps": {
+      "contact": {
+        "title": "Contáctenos",
+        "description": "Cuéntenos sobre su propiedad y sus necesidades por teléfono, email o el formulario. Respondemos el mismo día."
+      },
+      "assess": {
+        "title": "Evaluación en sitio",
+        "description": "Revisamos sus hogares, ductos y ventilación, y le enviamos una cotización clara y detallada, sin sorpresas."
+      },
+      "service": {
+        "title": "Limpieza y servicio",
+        "description": "Nuestra cuadrilla trabaja según su agenda, con discreción y limpieza, protegiendo por completo las áreas de huéspedes."
+      },
+      "certify": {
+        "title": "Informe y certificado",
+        "description": "Usted recibe un informe fotográfico y un certificado de seguridad para sus registros, aseguradoras e inspectores."
+      }
+    }
+  },
+  "Gallery": {
+    "title": "Nuestro trabajo",
+    "subtitle": "Resorts, lounges, suites y espacios que mantenemos limpios, seguros y libres de humo.",
+    "teaserTitle": "Un vistazo a nuestro trabajo",
+    "teaserSubtitle": "Desde resorts frente al mar hasta suites boutique en toda la Riviera Maya.",
+    "cta": "Ver la galería completa",
+    "prev": "Imagen anterior",
+    "next": "Imagen siguiente",
+    "goToImage": "Ir a la imagen {number}",
+    "captions": {
+      "lobbyFireplace": "Chimenea del lounge del lobby: deshollinada, inspeccionada y certificada.",
+      "kitchenExtraction": "Limpieza profunda de extracción y ductos de cocina comercial.",
+      "resortPool": "Resort frente al mar en la Zona Hotelera, Cancún.",
+      "suiteHearth": "Mantenimiento del hogar de una suite privada y eliminación de hollín.",
+      "restaurant": "Restaurante mantenido libre de humo para los huéspedes.",
+      "openAirLounge": "Lounge al aire libre con elemento de fuego, totalmente atendido.",
+      "guestDining": "Áreas de comedor de huéspedes mantenidas frescas, limpias y seguras.",
+      "boutiqueSuite": "Suite boutique con una chimenea impecable y libre de hollín."
+    }
+  },
+  "Videos": {
+    "title": "Antes y después",
+    "subtitle": "Vea la diferencia en menos de un minuto.",
+    "intro": "Breves videos de antes y después de visitas de servicio reales en la Riviera Maya. Puede reemplazarlos por su propio material en cualquier momento.",
+    "playLabel": "Reproducir video: {title}",
+    "before": "Antes",
+    "after": "Después",
+    "items": {
+      "resortChimney": {
+        "title": "Chimenea del lobby de un resort",
+        "caption": "Un ducto de resort muy cubierto de hollín restaurado a un tiro limpio y seguro."
+      },
+      "kitchenDuct": {
+        "title": "Ducto de extracción de cocina",
+        "caption": "Ductería de cocina con grasa limpiada según la norma de seguridad contra incendios."
+      },
+      "loungeFireplace": {
+        "title": "Chimenea de lounge",
+        "caption": "Una chimenea del lounge de huéspedes limpia y lista para la noche."
+      },
+      "rooftopFlue": {
+        "title": "Ducto y sombrerete de azotea",
+        "caption": "Ducto de azotea despejado y equipado con un nuevo sombrerete matachispas."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "subtitle": "Equipos de hostelería de toda la Riviera Maya nos confían sus propiedades.",
+    "items": {
+      "oceanview": {
+        "quote": "Riviera Hearth se encarga de todas nuestras chimeneas y de la extracción de cocina. Puntuales, impecables, y nuestros huéspedes ni se enteran de que estuvieron aquí.",
+        "role": "Gerente General"
+      },
+      "palmas": {
+        "quote": "Los certificados de seguridad hicieron que nuestra inspección anual fuera muy sencilla. Un equipo genuinamente profesional y bilingüe en el que confiamos cada temporada.",
+        "role": "Directora de Operaciones"
+      },
+      "celeste": {
+        "quote": "Rápidos, discretos y meticulosos. Despejaron un ducto obstruido la noche anterior a tener lleno total: verdadero servicio de emergencia.",
+        "role": "Propietaria"
+      }
+    }
+  },
+  "About": {
+    "title": "Sobre Riviera Hearth",
+    "subtitle": "Cuidado de chimeneas y ventilación enfocado en la hostelería, nacido en la Riviera Maya.",
+    "lead": "Mantenemos los fuegos, ductos y la ventilación de las mejores propiedades de la Riviera Maya limpios, seguros y en regla, para que los equipos de hostelería se enfoquen en sus huéspedes.",
+    "story1": "Riviera Hearth nació de una observación sencilla: los resorts y hoteles boutique de Cancún y la Riviera Maya merecen un especialista en chimeneas y ventilación que entienda la hostelería. Humo en una suite, una inspección reprobada o grasa en un ducto de cocina no es solo un tema de mantenimiento: es un tema de experiencia del huésped y de seguridad.",
+    "story2": "Hoy nuestras cuadrillas certificadas y bilingües cuidan hogares, ductos y sistemas de extracción en toda la región. Trabajamos según su agenda, protegemos cada espacio de huéspedes y documentamos todo, combinando el rigor de un contratista de seguridad con la discreción que esperan los mejores hoteles.",
+    "missionTitle": "Nuestra misión",
+    "mission": "Marcar el estándar de seguridad en chimeneas y ventilación para la hostelería de la Riviera Maya: limpio, certificado e invisible para sus huéspedes.",
+    "valuesTitle": "Lo que defendemos",
+    "values": {
+      "safety": {
+        "title": "La seguridad primero",
+        "description": "Cada trabajo se mide contra las normas de seguridad contra incendios y se documenta; nunca un atajo cuando se trata de huéspedes y personal."
+      },
+      "discretion": {
+        "title": "Profesionalismo discreto",
+        "description": "Trabajamos en torno a su operación, no a través de ella: limpios, uniformados y listos antes de que se llene el lobby."
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Llegamos cuando decimos que llegaremos, y nuestros informes hacen que siempre sepa exactamente qué se hizo."
+      }
+    },
+    "serviceAreaTitle": "Dónde trabajamos",
+    "serviceArea": "Atendemos hoteles, resorts y restaurantes en Cancún, Playa del Carmen, Tulum, Puerto Morelos y toda la Riviera Maya.",
+    "certificationsTitle": "Certificados y asegurados",
+    "certifications": "Nuestros técnicos están capacitados según normas internacionales de seguridad en chimeneas, y cada visita está totalmente asegurada y documentada."
+  },
+  "Contact": {
+    "title": "Contáctenos",
+    "subtitle": "Solicite una cotización gratuita o agende un servicio; respondemos el mismo día.",
+    "infoTitle": "Datos de contacto",
+    "phoneTitle": "Teléfono",
+    "emailTitle": "Email",
+    "whatsappTitle": "WhatsApp",
+    "whatsappCta": "Escríbanos por WhatsApp",
+    "addressTitle": "Oficina",
+    "hoursTitle": "Horario",
+    "hours": "Lun–Sáb, 7:00–19:00 · Línea de emergencia 24/7",
+    "mapTitle": "Mapa de la zona de servicio",
+    "formTitle": "Envíenos un mensaje",
+    "nameLabel": "Nombre",
+    "emailLabel": "Email",
+    "phoneLabel": "Teléfono (opcional)",
+    "companyLabel": "Hotel / empresa (opcional)",
+    "messageLabel": "¿Cómo podemos ayudarle?",
+    "send": "Enviar mensaje",
+    "sending": "Enviando…",
+    "successTitle": "Mensaje enviado",
+    "successBody": "Gracias por escribirnos; nuestro equipo le responderá el mismo día.",
+    "errorBody": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente por email.",
+    "orEmail": "O escríbanos a",
+    "invalidName": "Por favor ingrese su nombre.",
+    "invalidEmail": "Por favor ingrese un correo electrónico válido.",
+    "invalidMessage": "Por favor ingrese un mensaje breve (al menos 10 caracteres)."
+  },
+  "Cta": {
+    "title": "¿Listo para una chimenea impecable y certificada?",
+    "subtitle": "Únase a los hoteles y resorts de la Riviera Maya que confían en Riviera Hearth sus chimeneas y ventilación.",
+    "primary": "Solicitar cotización gratis",
+    "secondary": "Ver nuestros servicios"
+  },
+  "LanguageSwitcher": {
+    "label": "Cambiar idioma"
+  },
+  "Footer": {
+    "tagline": "Cuidado premium de chimeneas, hogares y ventilación para hoteles de Cancún y la Riviera Maya.",
+    "rights": "Todos los derechos reservados.",
+    "quickLinksTitle": "Explorar",
+    "contactTitle": "Contacto",
+    "followTitle": "Síganos",
+    "serviceArea": "Cancún · Playa del Carmen · Tulum · Riviera Maya",
+    "builtNote": "Contenido de ejemplo; los datos son ilustrativos."
+  }
+}

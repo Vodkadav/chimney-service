@@ -1,0 +1,265 @@
+{
+  "Metadata": {
+    "title": "Riviera Hearth — Hotel Chimney & Hearth Care in Cancún",
+    "description": "Premium chimney, fireplace and ventilation cleaning for hotels and resorts across Cancún and the Riviera Maya. Certified, insured, and discreet — with zero guest disruption.",
+    "servicesTitle": "Services",
+    "servicesDesc": "Chimney sweeping, safety inspection, creosote removal, ventilation cleaning and maintenance plans for hotels across the Riviera Maya.",
+    "galleryTitle": "Gallery",
+    "galleryDesc": "A look at the resorts, lounges and venues we keep clean, safe and smoke-free across Cancún and the Riviera Maya.",
+    "beforeAfterTitle": "Before & After",
+    "beforeAfterDesc": "See the difference our chimney and ventilation service makes, in short before-and-after videos.",
+    "aboutTitle": "About Us",
+    "aboutDesc": "Riviera Hearth is a hospitality-focused chimney and ventilation cleaning company serving Cancún and the Riviera Maya.",
+    "contactTitle": "Contact",
+    "contactDesc": "Request a free quote or schedule a service. Call, email, WhatsApp, or send us a message."
+  },
+  "Nav": {
+    "brand": "Riviera Hearth",
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "beforeAfter": "Before & After",
+    "about": "About",
+    "contact": "Contact",
+    "quote": "Get a quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "eyebrow": "Cancún · Riviera Maya",
+    "title": "Spotless chimneys for the Riviera Maya's finest hotels.",
+    "subtitle": "Certified chimney, fireplace and ventilation cleaning designed for hospitality — carried out discreetly, on your schedule, with zero disruption to your guests.",
+    "ctaPrimary": "Request a free quote",
+    "ctaSecondary": "Explore our services",
+    "trust": "Trusted by 200+ hotels and resorts across Cancún and the Riviera Maya."
+  },
+  "Stats": {
+    "resorts": "Hotels & resorts served",
+    "years": "Years on the Riviera Maya",
+    "response": "Emergency availability",
+    "certified": "Certified technicians"
+  },
+  "ServicesPreview": {
+    "eyebrow": "What we do",
+    "title": "Complete chimney & ventilation care",
+    "subtitle": "One specialist team for every flue, fireplace, kitchen extraction and ventilation system on your property.",
+    "cta": "View all services"
+  },
+  "Services": {
+    "title": "Our services",
+    "subtitle": "Comprehensive chimney, fireplace and ventilation care for hotels, resorts and restaurants.",
+    "intro": "From routine sweeping to full safety certification, we keep every fireplace, flue and extraction system on your property clean, efficient and compliant — protecting your guests, your staff and your reputation.",
+    "items": {
+      "sweeping": {
+        "title": "Chimney Sweeping",
+        "description": "Thorough, dust-controlled sweeping of flues and fireplaces using professional equipment that leaves no trace in your guest spaces."
+      },
+      "inspection": {
+        "title": "Inspection & Safety Certification",
+        "description": "Camera-assisted inspection of every flue, with a documented safety report and compliance certificate for your records and insurers."
+      },
+      "creosote": {
+        "title": "Soot & Creosote Removal",
+        "description": "Removal of flammable creosote and soot build-up — the leading cause of chimney fires — restoring safe, efficient draft."
+      },
+      "ventilation": {
+        "title": "Ventilation & Duct Cleaning",
+        "description": "Deep cleaning of kitchen extraction hoods, ducts and ventilation systems to improve air quality and meet fire-safety codes."
+      },
+      "caps": {
+        "title": "Caps, Liners & Spark Arrestors",
+        "description": "Supply and installation of chimney caps, liners and spark arrestors to keep out rain, wildlife and embers year-round."
+      },
+      "emergency": {
+        "title": "24/7 Emergency Response",
+        "description": "Blocked flue, smoke in a suite, or a failed inspection before opening? Our priority response team is on call around the clock."
+      },
+      "maintenance": {
+        "title": "Maintenance Plans",
+        "description": "Scheduled, hassle-free maintenance with seasonal visits, priority booking and transparent reporting across your whole property."
+      }
+    }
+  },
+  "Features": {
+    "title": "Why hotels choose Riviera Hearth",
+    "subtitle": "We are built around the way hospitality works — not the other way around.",
+    "items": {
+      "certified": {
+        "title": "Certified & Insured",
+        "description": "Fully certified technicians and comprehensive liability insurance, with documented compliance on every visit."
+      },
+      "hospitality": {
+        "title": "Hospitality-Grade",
+        "description": "Uniformed, background-checked crews who work discreetly around guests and protect every surface they touch."
+      },
+      "response": {
+        "title": "Fast Response",
+        "description": "Flexible scheduling and 24/7 emergency cover so a chimney issue never delays an opening or disturbs a stay."
+      },
+      "bilingual": {
+        "title": "Bilingual Team",
+        "description": "A fully bilingual (English/Spanish) team that communicates clearly with your managers and your guests alike."
+      }
+    }
+  },
+  "Process": {
+    "title": "How it works",
+    "subtitle": "A simple, transparent process from first call to final certificate.",
+    "steps": {
+      "contact": {
+        "title": "Get in touch",
+        "description": "Tell us about your property and needs by phone, email or the contact form. We respond the same day."
+      },
+      "assess": {
+        "title": "On-site assessment",
+        "description": "We survey your fireplaces, flues and ventilation, then send a clear, itemised quote — no surprises."
+      },
+      "service": {
+        "title": "Cleaning & service",
+        "description": "Our crew works on your schedule, discreetly and cleanly, with full protection of guest areas."
+      },
+      "certify": {
+        "title": "Report & certificate",
+        "description": "You receive a photo report and a safety certificate for your records, insurers and inspectors."
+      }
+    }
+  },
+  "Gallery": {
+    "title": "Our work",
+    "subtitle": "Resorts, lounges, suites and venues we keep clean, safe and smoke-free.",
+    "teaserTitle": "A glimpse of our work",
+    "teaserSubtitle": "From beachfront resorts to boutique suites across the Riviera Maya.",
+    "cta": "View the full gallery",
+    "prev": "Previous image",
+    "next": "Next image",
+    "goToImage": "Go to image {number}",
+    "captions": {
+      "lobbyFireplace": "Lobby lounge fireplace — swept, inspected and certified.",
+      "kitchenExtraction": "Commercial kitchen extraction and duct deep-clean.",
+      "resortPool": "Beachfront resort in the Zona Hotelera, Cancún.",
+      "suiteHearth": "Private suite hearth maintenance and soot removal.",
+      "restaurant": "Restaurant venue kept smoke-free for guests.",
+      "openAirLounge": "Open-air lounge and fire feature, fully serviced.",
+      "guestDining": "Guest dining areas kept fresh, clean and safe.",
+      "boutiqueSuite": "Boutique suite with a spotless, soot-free fireplace."
+    }
+  },
+  "Videos": {
+    "title": "Before & after",
+    "subtitle": "See the difference in under a minute.",
+    "intro": "Short before-and-after videos from real service visits across the Riviera Maya. Replace these with your own footage at any time.",
+    "playLabel": "Play video: {title}",
+    "before": "Before",
+    "after": "After",
+    "items": {
+      "resortChimney": {
+        "title": "Resort lobby chimney",
+        "caption": "A heavily sooted resort flue restored to a clean, safe draft."
+      },
+      "kitchenDuct": {
+        "title": "Kitchen extraction duct",
+        "caption": "Grease-laden kitchen ductwork cleaned to fire-safety standard."
+      },
+      "loungeFireplace": {
+        "title": "Lounge fireplace",
+        "caption": "A guest-lounge fireplace cleaned and ready for the evening."
+      },
+      "rooftopFlue": {
+        "title": "Rooftop flue & cap",
+        "caption": "Rooftop flue cleared and fitted with a new spark arrestor cap."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "What our clients say",
+    "subtitle": "Hospitality teams across the Riviera Maya trust us with their properties.",
+    "items": {
+      "oceanview": {
+        "quote": "Riviera Hearth handles all of our fireplaces and kitchen extraction. Punctual, spotless, and our guests never even notice they were here.",
+        "role": "General Manager"
+      },
+      "palmas": {
+        "quote": "The safety certificates made our annual inspection effortless. A genuinely professional, bilingual team we rely on every season.",
+        "role": "Operations Director"
+      },
+      "celeste": {
+        "quote": "Fast, discreet and meticulous. They cleared a blocked flue the night before a full house — true emergency service.",
+        "role": "Owner"
+      }
+    }
+  },
+  "About": {
+    "title": "About Riviera Hearth",
+    "subtitle": "Hospitality-focused chimney and ventilation care, born on the Riviera Maya.",
+    "lead": "We keep the fires, flues and ventilation of the Riviera Maya's finest properties clean, safe and compliant — so hospitality teams can focus on their guests.",
+    "story1": "Riviera Hearth began with a simple observation: the resorts and boutique hotels of Cancún and the Riviera Maya deserve a chimney and ventilation specialist that understands hospitality. Smoke in a suite, a failed inspection, or grease in a kitchen duct isn't just a maintenance issue — it's a guest-experience and safety issue.",
+    "story2": "Today our certified, bilingual crews care for fireplaces, flues and extraction systems across the region. We work on your schedule, protect every guest space, and document everything — combining the rigour of a safety contractor with the discretion the best hotels expect.",
+    "missionTitle": "Our mission",
+    "mission": "To set the standard for chimney and ventilation safety in hospitality across the Riviera Maya — clean, certified, and invisible to your guests.",
+    "valuesTitle": "What we stand for",
+    "values": {
+      "safety": {
+        "title": "Safety first",
+        "description": "Every job is measured against fire-safety standards and documented — never a shortcut where guests and staff are concerned."
+      },
+      "discretion": {
+        "title": "Quiet professionalism",
+        "description": "We work around your operation, not through it: clean, uniformed, and gone before the lobby fills up."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We show up when we say we will, and our reporting means you always know exactly what was done."
+      }
+    },
+    "serviceAreaTitle": "Where we work",
+    "serviceArea": "We serve hotels, resorts and restaurants across Cancún, Playa del Carmen, Tulum, Puerto Morelos and the wider Riviera Maya.",
+    "certificationsTitle": "Certified & insured",
+    "certifications": "Our technicians are trained to international chimney-safety standards, and every visit is fully insured and documented."
+  },
+  "Contact": {
+    "title": "Get in touch",
+    "subtitle": "Request a free quote or schedule a service — we reply the same day.",
+    "infoTitle": "Contact details",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "whatsappTitle": "WhatsApp",
+    "whatsappCta": "Message us on WhatsApp",
+    "addressTitle": "Office",
+    "hoursTitle": "Hours",
+    "hours": "Mon–Sat, 7:00–19:00 · 24/7 emergency line",
+    "mapTitle": "Service area map",
+    "formTitle": "Send us a message",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone (optional)",
+    "companyLabel": "Hotel / company (optional)",
+    "messageLabel": "How can we help?",
+    "send": "Send message",
+    "sending": "Sending…",
+    "successTitle": "Message sent",
+    "successBody": "Thanks for reaching out — our team will get back to you the same day.",
+    "errorBody": "Something went wrong. Please try again or email us directly.",
+    "orEmail": "Or email us at",
+    "invalidName": "Please enter your name.",
+    "invalidEmail": "Please enter a valid email address.",
+    "invalidMessage": "Please enter a short message (at least 10 characters)."
+  },
+  "Cta": {
+    "title": "Ready for a spotless, certified chimney?",
+    "subtitle": "Join the hotels and resorts across the Riviera Maya that trust Riviera Hearth with their fireplaces and ventilation.",
+    "primary": "Request a free quote",
+    "secondary": "See our services"
+  },
+  "LanguageSwitcher": {
+    "label": "Change language"
+  },
+  "Footer": {
+    "tagline": "Premium chimney, fireplace and ventilation care for hotels across Cancún and the Riviera Maya.",
+    "rights": "All rights reserved.",
+    "quickLinksTitle": "Explore",
+    "contactTitle": "Contact",
+    "followTitle": "Follow us",
+    "serviceArea": "Cancún · Playa del Carmen · Tulum · Riviera Maya",
+    "builtNote": "Placeholder content — details are illustrative."
+  }
+}

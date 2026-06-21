@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40" role="img" aria-label="México">
+  <rect width="60" height="40" fill="#ffffff"/>
+  <rect width="20" height="40" fill="#006847"/>
+  <rect x="40" width="20" height="40" fill="#ce1126"/>
+  <g transform="translate(30 20)" fill="none" stroke="#5c3a1e" stroke-width="1.1">
+    <circle r="5.2"/>
+    <path d="M-3.4 1.6c1.7 2.1 5.1 2.1 6.8 0" stroke-width="0.9"/>
+    <path d="M-2.2 -1.4c1 1.6 3.4 1.6 4.4 0" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(30 20)" fill="#7a4a22">
+    <ellipse cx="0" cy="-0.6" rx="1.5" ry="1" transform="rotate(-18)"/>
+  </g>
+</svg>
