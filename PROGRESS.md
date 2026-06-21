@@ -30,9 +30,16 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
     face-swap/LoRA pipeline we don't have, so that exact ask isn't possible locally
   - Real photos already supply the real crew; optional **no-face thematic** AI
     originals (duct interiors, rooftop HVAC) can be generated to taste
+- [x] Committed (`147a6b6`) + pushed to `main`; Vercel auto-deployed — **build green**
+- [ ] **Manual — makes the site public:** Vercel serves it behind **Deployment
+      Protection** (the public currently gets HTTP 401). Turn it off for Production:
+      Vercel → Project `chimney-service` → Settings → Deployment Protection → set
+      Vercel Authentication to off / "Only Preview Deployments". Then set
+      `NEXT_PUBLIC_SITE_URL` to the production domain and redeploy.
+- [ ] **Manual:** add `NEXT_PUBLIC_WEB3FORMS_KEY` for the live contact form
+      (until then it falls back to a `mailto:` link)
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
-- [ ] **Manual:** add Web3Forms key + import repo into Vercel (see `docs/DEPLOYMENT.md`)
 - [ ] Optional: attach paid custom domain
 
 ## Resuming on another machine
@@ -49,17 +56,23 @@ npm run dev                     # http://localhost:3000 (redirects to /en)
 
 Verify the gate any time: `npm run lint && npm run typecheck && npm test && npm run build`.
 
-## Manual steps still to do
+## Deploy state & manual steps
 
-Full walkthrough with exact links: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
+The Vercel project is connected and **auto-deploys on push to `main`** (last deploy:
+commit `147a6b6`, build green). What's left is all in the Vercel dashboard:
 
-1. **Web3Forms key** (live contact form, ~2 min) — create a free key at
-   https://web3forms.com, verify the email, then set `NEXT_PUBLIC_WEB3FORMS_KEY`.
-   Until then the form falls back to a `mailto:` link, so the site is fully usable.
-2. **Deploy on Vercel** (~5 min) — import `Vodkadav/chimney-service` at
-   https://vercel.com/new, add env vars `NEXT_PUBLIC_SITE_URL` and (optionally)
-   `NEXT_PUBLIC_WEB3FORMS_KEY`, Deploy. Pushes to `main` auto-deploy after that.
-3. *(Optional, later)* attach a paid custom domain in Vercel → Settings → Domains.
+1. **Make it public** — the site currently returns **HTTP 401** to anyone not logged
+   in: Vercel → Project `chimney-service` → Settings → **Deployment Protection** →
+   turn Vercel Authentication off for Production (or "Only Preview Deployments").
+2. **Set the canonical URL** — set `NEXT_PUBLIC_SITE_URL` (Settings → Environment
+   Variables) to the production domain so metadata/sitemap/OG use it, then redeploy.
+3. **Web3Forms key** (~2 min) — create a free key at https://web3forms.com, verify
+   the email, set `NEXT_PUBLIC_WEB3FORMS_KEY`. Until then the contact form falls back
+   to a `mailto:` link, so the site is still usable.
+4. *(Optional, later)* attach a paid custom domain in Vercel → Settings → Domains.
+
+Reference for the remaining real content (addresses, hours, testimonials, logo):
+`docs/Formulario-de-Contenido.docx` and `docs/reference-existing-site.md`.
 
 ## Notes
 
