@@ -5,10 +5,10 @@ import { NextIntlClientProvider } from "next-intl";
 import messages from "@/messages/en.json";
 import { GalleryCarousel } from "./GalleryCarousel";
 
-const FIRST = messages.Gallery.captions.lobbyFireplace;
-const SECOND = messages.Gallery.captions.kitchenExtraction;
-const LAST = messages.Gallery.captions.boutiqueSuite;
-const THIRD = messages.Gallery.captions.resortPool;
+const FIRST = messages.Gallery.captions.cameraInspection;
+const SECOND = messages.Gallery.captions.mechanicalRoom;
+const LAST = messages.Gallery.captions.teamRooftop;
+const THIRD = messages.Gallery.captions.ductMotor;
 
 function renderCarousel() {
   return render(

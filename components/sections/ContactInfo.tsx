@@ -5,7 +5,7 @@ import { siteConfig } from "@/data/site";
 
 export function ContactInfo() {
   const t = useTranslations("Contact");
-  const waLink = `https://wa.me/${siteConfig.whatsapp}`;
+  const waLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappText)}`;
 
   const rows = [
     {
@@ -50,7 +50,7 @@ export function ContactInfo() {
             <span>
               <span className="text-muted block text-sm">{t("addressTitle")}</span>
               <span className="text-foreground font-medium">
-                {siteConfig.address.street}, {siteConfig.address.city}
+                {siteConfig.address.street} · {siteConfig.address.city}
               </span>
             </span>
           </li>
@@ -63,6 +63,30 @@ export function ContactInfo() {
               <span className="text-foreground font-medium">{t("hours")}</span>
             </span>
           </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 className="text-muted mb-3 text-sm font-semibold">{t("contactsTitle")}</h3>
+        <ul className="grid gap-4 sm:grid-cols-2">
+          {siteConfig.contacts.map((c) => (
+            <li key={c.email} className="border-border-subtle bg-surface rounded-2xl border p-4">
+              <p className="font-display text-foreground font-bold">{c.name}</p>
+              <p className="text-muted text-sm">{c.role}</p>
+              <a
+                href={`mailto:${c.email}`}
+                className="text-accent hover:text-accent-strong mt-2 block text-sm break-all transition-colors"
+              >
+                {c.email}
+              </a>
+              <a
+                href={`tel:${c.phone.replace(/\s/g, "")}`}
+                className="text-muted hover:text-accent block text-sm transition-colors"
+              >
+                {c.phone}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
 

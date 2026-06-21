@@ -1,4 +1,4 @@
-import { Brush, ShieldCheck, Sparkles, Wind, Wrench, Siren, CalendarCheck } from "lucide-react";
+import { Wind, AirVent, Wrench, ScanSearch } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
 /**
@@ -10,11 +10,8 @@ export interface Service {
 }
 
 export const services: Service[] = [
-  { key: "sweeping", Icon: Brush },
-  { key: "inspection", Icon: ShieldCheck },
-  { key: "creosote", Icon: Sparkles },
-  { key: "ventilation", Icon: Wind },
-  { key: "caps", Icon: Wrench },
-  { key: "emergency", Icon: Siren },
-  { key: "maintenance", Icon: CalendarCheck },
+  { key: "ducts", Icon: Wind },
+  { key: "hvac", Icon: AirVent },
+  { key: "preventive", Icon: Wrench },
+  { key: "inspection", Icon: ScanSearch },
 ];

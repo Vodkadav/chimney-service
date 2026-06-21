@@ -4,7 +4,6 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { galleryImages } from "@/data/gallery";
-import { unsplash } from "@/lib/images";
 
 export function GalleryTeaser() {
   const t = useTranslations("Gallery");
@@ -17,11 +16,11 @@ export function GalleryTeaser() {
       <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
         {preview.map((img) => (
           <div
-            key={img.id}
+            key={img.src}
             className="border-border-subtle relative aspect-[3/4] overflow-hidden rounded-2xl border"
           >
             <Image
-              src={unsplash(img.id, 600)}
+              src={img.src}
               alt={t(`captions.${img.captionKey}`)}
               fill
               sizes="(max-width: 1024px) 50vw, 25vw"

@@ -6,9 +6,10 @@ import { Hero } from "@/components/sections/Hero";
 import { Stats } from "@/components/sections/Stats";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
 import { Features } from "@/components/sections/Features";
+import { Sectors } from "@/components/sections/Sectors";
 import { Process } from "@/components/sections/Process";
 import { GalleryTeaser } from "@/components/sections/GalleryTeaser";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { Equipment } from "@/components/sections/Equipment";
 import { CtaBand } from "@/components/sections/CtaBand";
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
@@ -22,9 +23,10 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Stats />
       <ServicesPreview />
       <Features />
+      <Sectors />
       <Process />
       <GalleryTeaser />
-      <Testimonials />
+      <Equipment />
       <CtaBand />
     </main>
   );

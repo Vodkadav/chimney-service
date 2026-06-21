@@ -1,22 +1,38 @@
-# Progress — Riviera Hearth (Hotel Chimney Service)
+# Progress — Nuevo Amanecer (Industrial Maintenance)
 
-Premium bilingual (EN/ES) marketing site for a Cancún hotel chimney-cleaning
-business. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
+Bilingual (EN/ES) marketing site for **Desarrolladora Nuevo Amanecer del Sureste
+S.A. de C.V.** — industrial duct / HVAC ventilation cleaning + preventive technical
+maintenance for hotels, hospitals, universities, malls and restaurants in Cancún &
+Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
+
+> Built on the `chimney-service` repo (originally a placeholder "Riviera Hearth"
+> hotel-chimney template). Reframe source of truth: `docs/reference-existing-site.md`
+> (pulled from the client's live site nuevoamanecer.company).
 
 ## Status
 
-- [x] Project scaffold (Next.js 16, Tailwind v4, Vitest, Playwright) — from the `webpresence` template
+- [x] Project scaffold (Next.js 16, Tailwind v4, Vitest, Playwright)
 - [x] EN/ES i18n (locale routing, language switcher, parity-tested catalogs)
-- [x] Premium light theme + design system (serif display, ember/teal palette)
-- [x] Layout, slick page navigation, brand identity (Riviera Hearth)
-- [x] Pages: Home, Services, Gallery, Before & After, About, Contact
-- [x] Gallery carousel (accessible, captioned) — TDD
-- [x] Before/after lazy YouTube embeds — TDD
-- [x] Contact form (Web3Forms + mailto fallback, validated) — TDD
+- [x] Design system + UI primitives (industrial steel-blue / cyan palette)
+- [x] Pages: Home, Services, Gallery, Documented work, About, Contact
+- [x] Gallery carousel + contact form (Web3Forms + mailto fallback) — TDD
 - [x] SEO (per-locale metadata, hreflang, OG image, sitemap, robots)
-- [x] CI gate (lint → typecheck → test → build) green; build verified, 39 tests passing
+- [x] **Reframed to real client Nuevo Amanecer** — brand, real bilingual copy
+      (4 services, process, about, SEO) from their live site
+- [x] **New sections:** Sectores atendidos (5) + Equipamiento (6)
+- [x] **Real client photos** wired into gallery / documented-work / about; hero uses
+      matching industrial stock; placeholder testimonials removed (no real ones yet)
+- [x] **Real contacts:** business line (dnasolution66@gmail.com / +52 998 154 0967)
+      + Director (Lázaro Rondón) + Comercial (Marcos Machado)
+- [x] CI gate (lint → typecheck → test → build) green; 39 tests passing
+- [~] AI imagery (client asked for "real crew in AI scenes")
+  - Local generator is SDXL **text-to-image only** — faithful real faces need a
+    face-swap/LoRA pipeline we don't have, so that exact ask isn't possible locally
+  - Real photos already supply the real crew; optional **no-face thematic** AI
+    originals (duct interiors, rooftop HVAC) can be generated to taste
+- [ ] Pending real details from the client: exact street addresses, office hours,
+      consented testimonials, social links, logo/brand mark
 - [ ] **Manual:** add Web3Forms key + import repo into Vercel (see `docs/DEPLOYMENT.md`)
-- [ ] Swap placeholder content (brand, contact, photos, videos) for real details
 - [ ] Optional: attach paid custom domain
 
 ## Resuming on another machine
@@ -33,7 +49,7 @@ npm run dev                     # http://localhost:3000 (redirects to /en)
 
 Verify the gate any time: `npm run lint && npm run typecheck && npm test && npm run build`.
 
-### Manual steps still to do (the only things not automatable)
+## Manual steps still to do
 
 Full walkthrough with exact links: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
 
@@ -41,18 +57,14 @@ Full walkthrough with exact links: [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md).
    https://web3forms.com, verify the email, then set `NEXT_PUBLIC_WEB3FORMS_KEY`.
    Until then the form falls back to a `mailto:` link, so the site is fully usable.
 2. **Deploy on Vercel** (~5 min) — import `Vodkadav/chimney-service` at
-   https://vercel.com/new, add env vars `NEXT_PUBLIC_WEB3FORMS_KEY` and
-   `NEXT_PUBLIC_SITE_URL`, Deploy. Pushes to `main` auto-deploy after that.
-3. **Swap placeholder content** for the real business — brand/contact in
-   `data/site.ts`, copy in `messages/{en,es}.json`, photos in `data/gallery.ts`,
-   before/after videos (currently placeholder YouTube ids) in `data/videos.ts`.
-4. *(Optional, later)* attach a paid custom domain in Vercel → Settings → Domains.
-
-> Note: we standardized on **Vercel**, not Cloudflare — no Cloudflare account is
-> needed (none of your projects actually used it).
+   https://vercel.com/new, add env vars `NEXT_PUBLIC_SITE_URL` and (optionally)
+   `NEXT_PUBLIC_WEB3FORMS_KEY`, Deploy. Pushes to `main` auto-deploy after that.
+3. *(Optional, later)* attach a paid custom domain in Vercel → Settings → Domains.
 
 ## Notes
 
-- Created 2026-06-21.
-- Gallery photos are remote Unsplash images; before/after videos use placeholder
-  YouTube ids — both are swap-ready via `data/gallery.ts` / `data/videos.ts`.
+- Created 2026-06-21; reframed to Nuevo Amanecer the same day.
+- Real client job photos live in `public/photos/`; the hero uses a matching
+  industrial Unsplash photo. Content is wired from `data/*.ts` + `messages/{en,es}.json`.
+- The Spanish client intake form (`docs/Formulario-de-Contenido.docx`) can still be
+  used to collect the remaining real details (addresses, hours, testimonials, logo).

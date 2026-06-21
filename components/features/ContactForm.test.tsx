@@ -14,11 +14,11 @@ function renderForm() {
 }
 
 async function fillValid() {
-  await userEvent.type(screen.getByLabelText("Name"), "Ada Lovelace");
+  await userEvent.type(screen.getByLabelText("Full name"), "Ada Lovelace");
   await userEvent.type(screen.getByLabelText("Email"), "ada@example.com");
   await userEvent.type(
-    screen.getByLabelText("How can we help?"),
-    "We need our lobby fireplace and kitchen extraction serviced before the season.",
+    screen.getByLabelText("Describe the problem or need"),
+    "We need our kitchen extraction ducts cleaned and the rooftop HVAC units inspected.",
   );
 }
 
@@ -30,7 +30,7 @@ describe("ContactForm", () => {
     vi.stubGlobal("fetch", fetchMock);
     renderForm();
 
-    await userEvent.click(screen.getByRole("button", { name: "Send message" }));
+    await userEvent.click(screen.getByRole("button", { name: "Request inspection" }));
 
     expect(await screen.findByText("Please enter your name.")).toBeInTheDocument();
     expect(fetchMock).not.toHaveBeenCalled();
@@ -42,9 +42,9 @@ describe("ContactForm", () => {
     renderForm();
 
     await fillValid();
-    await userEvent.click(screen.getByRole("button", { name: "Send message" }));
+    await userEvent.click(screen.getByRole("button", { name: "Request inspection" }));
 
-    expect(await screen.findByText("Message sent")).toBeInTheDocument();
+    expect(await screen.findByText("Request sent")).toBeInTheDocument();
     expect(fetchMock).toHaveBeenCalledWith(
       "https://api.web3forms.com/submit",
       expect.objectContaining({ method: "POST" }),
@@ -56,7 +56,7 @@ describe("ContactForm", () => {
     renderForm();
 
     await fillValid();
-    await userEvent.click(screen.getByRole("button", { name: "Send message" }));
+    await userEvent.click(screen.getByRole("button", { name: "Request inspection" }));
 
     expect(await screen.findByText(/Something went wrong/)).toBeInTheDocument();
   });

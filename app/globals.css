@@ -54,7 +54,7 @@
 }
 
 /*
- * Premium warm-light theme. Token names are shared with the UI primitives
+ * Industrial light theme. Token names are shared with the UI primitives
  * (Button, Input, Card, Badge, Heading, GradientText) so they restyle for free.
  * All foreground/accent pairings meet WCAG AA on the ivory background.
  */
@@ -64,12 +64,12 @@
   --muted: #6b5d52;
   --surface: #ffffff;
   --border-subtle: rgba(33, 26, 21, 0.1);
-  /* Ember orange: AA-legible as text/icons on the ivory background. */
-  --accent: #c2410c;
-  /* Deep terracotta: AA-legible with white text for filled buttons. */
-  --accent-strong: #9a3412;
-  /* Caribbean teal: secondary accent for gradients and highlights. */
-  --accent-2: #0f766e;
+  /* Steel blue: AA-legible as text/icons on the ivory background. */
+  --accent: #0369a1;
+  /* Deep blue: AA-legible with white text for filled buttons. */
+  --accent-strong: #075985;
+  /* Cyan/teal: secondary accent for gradients and highlights (AA as text). */
+  --accent-2: #0e7490;
 }
 
 body {

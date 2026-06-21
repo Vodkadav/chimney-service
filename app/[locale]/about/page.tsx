@@ -10,11 +10,10 @@ import { PageHeader } from "@/components/sections/PageHeader";
 import { CtaBand } from "@/components/sections/CtaBand";
 import { Card } from "@/components/ui/card";
 import { featureImages } from "@/data/gallery";
-import { unsplash } from "@/lib/images";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const VALUES = ["safety", "discretion", "reliability"] as const;
+const VALUES = ["safety", "documentation", "continuity"] as const;
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -40,10 +39,10 @@ export default async function AboutPage({ params }: Props) {
           <p className="text-foreground text-lg leading-relaxed">{t("story1")}</p>
           <p className="text-muted leading-relaxed">{t("story2")}</p>
         </div>
-        <div className="border-border-subtle relative aspect-[4/3] overflow-hidden rounded-3xl border shadow-[0_30px_80px_-40px_rgba(33,26,21,0.45)]">
+        <div className="border-border-subtle relative aspect-[4/3] overflow-hidden rounded-3xl border shadow-[0_30px_80px_-40px_rgba(11,31,42,0.45)]">
           <Image
-            src={unsplash(featureImages.lounge, 1000)}
-            alt=""
+            src={featureImages.about}
+            alt={t("title")}
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

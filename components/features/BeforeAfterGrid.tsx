@@ -1,31 +1,28 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { YouTubeFacade } from "./YouTubeFacade";
-import { beforeAfterVideos } from "@/data/videos";
+import { workPhotos } from "@/data/videos";
 
+/** Documented-work photo grid (real job photos with technical captions). */
 export function BeforeAfterGrid() {
   const t = useTranslations("Videos");
 
   return (
     <div className="grid gap-8 md:grid-cols-2">
-      {beforeAfterVideos.map(({ key, youtubeId }) => {
+      {workPhotos.map(({ key, src }) => {
         const title = t(`items.${key}.title`);
         return (
           <figure key={key} className="flex flex-col">
-            <YouTubeFacade
-              videoId={youtubeId}
-              title={title}
-              playLabel={t("playLabel", { title })}
-            />
+            <div className="border-border-subtle relative aspect-[4/3] overflow-hidden rounded-2xl border shadow-[0_20px_50px_-30px_rgba(11,31,42,0.4)]">
+              <Image
+                src={src}
+                alt={title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
             <figcaption className="mt-4">
-              <div className="flex items-center gap-2">
-                <span className="bg-foreground/10 text-muted rounded-full px-2.5 py-0.5 text-xs font-semibold">
-                  {t("before")}
-                </span>
-                <span className="bg-accent/10 text-accent rounded-full px-2.5 py-0.5 text-xs font-semibold">
-                  {t("after")}
-                </span>
-              </div>
-              <h3 className="font-display text-foreground mt-3 text-lg font-bold">{title}</h3>
+              <h3 className="font-display text-foreground text-lg font-bold">{title}</h3>
               <p className="text-muted mt-1 text-sm leading-relaxed">{t(`items.${key}.caption`)}</p>
             </figcaption>
           </figure>

@@ -2,7 +2,7 @@ import { useTranslations } from "next-intl";
 import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Logo } from "./Logo";
-import { InstagramIcon, FacebookIcon, WhatsappIcon } from "@/components/ui/icons";
+import { WhatsappIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/data/site";
 
 const NAV_LINKS = [
@@ -17,12 +17,7 @@ export function Footer() {
   const t = useTranslations("Footer");
   const tn = useTranslations("Nav");
   const year = new Date().getFullYear();
-
-  const social = [
-    { href: siteConfig.social.instagram, Icon: InstagramIcon, label: "Instagram" },
-    { href: siteConfig.social.facebook, Icon: FacebookIcon, label: "Facebook" },
-    { href: `https://wa.me/${siteConfig.whatsapp}`, Icon: WhatsappIcon, label: "WhatsApp" },
-  ];
+  const waLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappText)}`;
 
   return (
     <footer className="border-border-subtle bg-surface relative mt-24 border-t">
@@ -70,20 +65,16 @@ export function Footer() {
 
         <div className="flex flex-col gap-3">
           <p className="text-foreground font-display text-sm font-semibold">{t("followTitle")}</p>
-          <div className="flex items-center gap-3">
-            {social.map(({ href, Icon, label }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={label}
-                className="border-border-subtle text-muted hover:text-accent hover:border-accent/50 inline-flex size-9 items-center justify-center rounded-full border transition-colors"
-              >
-                <Icon className="size-4" />
-              </a>
-            ))}
-          </div>
+          <a
+            href={waLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="border-border-subtle text-muted hover:text-accent hover:border-accent/50 inline-flex w-fit items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors"
+          >
+            <WhatsappIcon className="size-4" />
+            WhatsApp
+          </a>
         </div>
       </div>
 

@@ -1,265 +1,288 @@
 {
   "Metadata": {
-    "title": "Riviera Hearth — Hotel Chimney & Hearth Care in Cancún",
-    "description": "Premium chimney, fireplace and ventilation cleaning for hotels and resorts across Cancún and the Riviera Maya. Certified, insured, and discreet — with zero guest disruption.",
+    "title": "Nuevo Amanecer — Industrial Maintenance & Duct Cleaning in Cancún & Mérida",
+    "description": "Smoke-and-grease extraction duct cleaning, industrial ventilation (HVAC) and preventive technical maintenance for hotels, hospitals, universities, malls and restaurants in Cancún and Mérida.",
     "servicesTitle": "Services",
-    "servicesDesc": "Chimney sweeping, safety inspection, creosote removal, ventilation cleaning and maintenance plans for hotels across the Riviera Maya.",
+    "servicesDesc": "Extraction-duct cleaning, industrial ventilation (HVAC), preventive maintenance and technical inspections for critical environments across the Yucatán Peninsula.",
     "galleryTitle": "Gallery",
-    "galleryDesc": "A look at the resorts, lounges and venues we keep clean, safe and smoke-free across Cancún and the Riviera Maya.",
-    "beforeAfterTitle": "Before & After",
-    "beforeAfterDesc": "See the difference our chimney and ventilation service makes, in short before-and-after videos.",
+    "galleryDesc": "Our team and real jobs — duct cleaning, HVAC and technical inspection across Cancún and Mérida.",
+    "beforeAfterTitle": "Documented work",
+    "beforeAfterDesc": "Photographic evidence of real interventions: cleaning of ducts, extractors and ventilation systems.",
     "aboutTitle": "About Us",
-    "aboutDesc": "Riviera Hearth is a hospitality-focused chimney and ventilation cleaning company serving Cancún and the Riviera Maya.",
+    "aboutDesc": "Nuevo Amanecer: industrial maintenance and technical solutions for critical environments in Cancún, Mérida and the Yucatán Peninsula.",
     "contactTitle": "Contact",
-    "contactDesc": "Request a free quote or schedule a service. Call, email, WhatsApp, or send us a message."
+    "contactDesc": "Request a technical inspection or reach us by phone or WhatsApp. We reply within 24 business hours."
   },
   "Nav": {
-    "brand": "Riviera Hearth",
+    "brand": "Nuevo Amanecer",
     "home": "Home",
     "services": "Services",
     "gallery": "Gallery",
-    "beforeAfter": "Before & After",
+    "beforeAfter": "Our work",
     "about": "About",
     "contact": "Contact",
-    "quote": "Get a quote",
+    "quote": "Request inspection",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
   "Hero": {
-    "eyebrow": "Cancún · Riviera Maya",
-    "title": "Spotless chimneys for the Riviera Maya's finest hotels.",
-    "subtitle": "Certified chimney, fireplace and ventilation cleaning designed for hospitality — carried out discreetly, on your schedule, with zero disruption to your guests.",
-    "ctaPrimary": "Request a free quote",
-    "ctaSecondary": "Explore our services",
-    "trust": "Trusted by 200+ hotels and resorts across Cancún and the Riviera Maya."
+    "eyebrow": "Cancún · Mérida · Yucatán Peninsula",
+    "title": "Industrial maintenance in Cancún & Mérida",
+    "subtitle": "Specialists in extraction-duct cleaning, industrial ventilation and technical maintenance for critical environments.",
+    "ctaPrimary": "Request a technical inspection",
+    "ctaSecondary": "See our services",
+    "trust": "Hotels, hospitals, universities, malls and restaurants rely on our planned, documented interventions."
   },
   "Stats": {
-    "resorts": "Hotels & resorts served",
-    "years": "Years on the Riviera Maya",
-    "response": "Emergency availability",
-    "certified": "Certified technicians"
+    "support": "Technical support",
+    "offices": "Regional offices",
+    "response": "Response time",
+    "documented": "Documented evidence"
   },
   "ServicesPreview": {
     "eyebrow": "What we do",
-    "title": "Complete chimney & ventilation care",
-    "subtitle": "One specialist team for every flue, fireplace, kitchen extraction and ventilation system on your property.",
+    "title": "Complete technical solutions",
+    "subtitle": "Every service runs under documented procedures, with certified personnel and technical evidence on delivery.",
     "cta": "View all services"
   },
   "Services": {
     "title": "Our services",
-    "subtitle": "Comprehensive chimney, fireplace and ventilation care for hotels, resorts and restaurants.",
-    "intro": "From routine sweeping to full safety certification, we keep every fireplace, flue and extraction system on your property clean, efficient and compliant — protecting your guests, your staff and your reputation.",
+    "subtitle": "Duct cleaning, industrial ventilation, preventive maintenance and inspections for environments that can't stop.",
+    "intro": "From deep cleaning of extraction ducts to preventive-maintenance programs, we keep your facilities running, safe and compliant — with documented evidence on every visit.",
     "items": {
-      "sweeping": {
-        "title": "Chimney Sweeping",
-        "description": "Thorough, dust-controlled sweeping of flues and fireplaces using professional equipment that leaves no trace in your guest spaces."
+      "ducts": {
+        "title": "Smoke & grease extraction-duct cleaning",
+        "description": "Deep cleaning of hoods, ducts and extractors in industrial kitchens to remove grease build-up, improve draft and reduce operational risk from excess soot and residue."
+      },
+      "hvac": {
+        "title": "Industrial ventilation (HVAC) maintenance",
+        "description": "Full service for air-conditioning, air handlers, extractors and industrial HVAC units: coil cleaning, airflow balancing and electromechanical checks."
+      },
+      "preventive": {
+        "title": "Preventive technical maintenance",
+        "description": "Preventive and corrective programs for electromechanical, hydraulic and general-services equipment, with documented schedules that sustain operational continuity."
       },
       "inspection": {
-        "title": "Inspection & Safety Certification",
-        "description": "Camera-assisted inspection of every flue, with a documented safety report and compliance certificate for your records and insurers."
-      },
-      "creosote": {
-        "title": "Soot & Creosote Removal",
-        "description": "Removal of flammable creosote and soot build-up — the leading cause of chimney fires — restoring safe, efficient draft."
-      },
-      "ventilation": {
-        "title": "Ventilation & Duct Cleaning",
-        "description": "Deep cleaning of kitchen extraction hoods, ducts and ventilation systems to improve air quality and meet fire-safety codes."
-      },
-      "caps": {
-        "title": "Caps, Liners & Spark Arrestors",
-        "description": "Supply and installation of chimney caps, liners and spark arrestors to keep out rain, wildlife and embers year-round."
-      },
-      "emergency": {
-        "title": "24/7 Emergency Response",
-        "description": "Blocked flue, smoke in a suite, or a failed inspection before opening? Our priority response team is on call around the clock."
-      },
-      "maintenance": {
-        "title": "Maintenance Plans",
-        "description": "Scheduled, hassle-free maintenance with seasonal visits, priority booking and transparent reporting across your whole property."
+        "title": "Technical inspections & risk assessment",
+        "description": "Professional diagnostics to identify critical points and improvement opportunities, with a clear prioritized report and an action plan."
       }
     }
   },
   "Features": {
-    "title": "Why hotels choose Riviera Hearth",
-    "subtitle": "We are built around the way hospitality works — not the other way around.",
+    "title": "Why choose us?",
+    "subtitle": "Reliable engineering for facilities that cannot fail.",
     "items": {
-      "certified": {
-        "title": "Certified & Insured",
-        "description": "Fully certified technicians and comprehensive liability insurance, with documented compliance on every visit."
+      "critical": {
+        "title": "Critical environments",
+        "description": "Specialized in installations that cannot stop operating."
       },
-      "hospitality": {
-        "title": "Hospitality-Grade",
-        "description": "Uniformed, background-checked crews who work discreetly around guests and protect every surface they touch."
+      "regional": {
+        "title": "Regional coverage",
+        "description": "Technical service across Cancún, Mérida and the whole Yucatán Peninsula."
       },
-      "response": {
-        "title": "Fast Response",
-        "description": "Flexible scheduling and 24/7 emergency cover so a chimney issue never delays an opening or disturbs a stay."
+      "qualified": {
+        "title": "Qualified personnel",
+        "description": "Equipped, supervised technical crews with proven experience."
       },
-      "bilingual": {
-        "title": "Bilingual Team",
-        "description": "A fully bilingual (English/Spanish) team that communicates clearly with your managers and your guests alike."
+      "documented": {
+        "title": "Documented evidence",
+        "description": "Logbook, before/after photos and a technical report at closeout."
       }
     }
   },
   "Process": {
-    "title": "How it works",
-    "subtitle": "A simple, transparent process from first call to final certificate.",
+    "title": "How we work",
+    "subtitle": "A four-stage technical methodology, from the first visit to the final report.",
     "steps": {
-      "contact": {
-        "title": "Get in touch",
-        "description": "Tell us about your property and needs by phone, email or the contact form. We respond the same day."
+      "inspection": {
+        "title": "Initial inspection",
+        "description": "Technical visit and on-site survey of the installation."
       },
-      "assess": {
-        "title": "On-site assessment",
-        "description": "We survey your fireplaces, flues and ventilation, then send a clear, itemised quote — no surprises."
+      "diagnosis": {
+        "title": "Technical diagnosis",
+        "description": "Report with findings, risks and intervention priorities."
       },
-      "service": {
-        "title": "Cleaning & service",
-        "description": "Our crew works on your schedule, discreetly and cleanly, with full protection of guest areas."
+      "intervention": {
+        "title": "Intervention & cleaning",
+        "description": "Service carried out by qualified crews with industrial equipment."
       },
-      "certify": {
-        "title": "Report & certificate",
-        "description": "You receive a photo report and a safety certificate for your records, insurers and inspectors."
+      "report": {
+        "title": "Final technical report",
+        "description": "Delivery of logbook, photographic evidence and recommendations."
+      }
+    }
+  },
+  "Sectors": {
+    "title": "Sectors we serve",
+    "subtitle": "Where operations cannot stop.",
+    "items": {
+      "hotels": {
+        "title": "Hotels & resorts",
+        "description": "24/7 operation without disturbing the guest."
+      },
+      "hospitals": {
+        "title": "Hospitals & clinics",
+        "description": "Sanitary protocols and critical environments."
+      },
+      "universities": {
+        "title": "Universities",
+        "description": "Safe, well-maintained campuses."
+      },
+      "malls": {
+        "title": "Shopping malls",
+        "description": "Common areas, kitchens and parking."
+      },
+      "restaurants": {
+        "title": "Industrial restaurants",
+        "description": "Clean kitchens and ducts in top condition."
+      }
+    }
+  },
+  "Equipment": {
+    "title": "Equipment",
+    "subtitle": "Calibrated, certified equipment for precise results.",
+    "intro": "We work with industrial-grade measurement, inspection and cleaning technology, kept in calibration to guarantee reliable diagnostics.",
+    "items": {
+      "cameras": {
+        "title": "Inspection cameras",
+        "description": "Video borescope for the inside of ducts."
+      },
+      "measurement": {
+        "title": "Measurement equipment",
+        "description": "Calibrated manometers, anemometers and multimeters."
+      },
+      "pressure": {
+        "title": "Pressure cleaning",
+        "description": "Industrial pressure washers and degreasing chemicals."
+      },
+      "thermography": {
+        "title": "Thermography",
+        "description": "Thermal cameras for predictive diagnostics."
+      },
+      "ppe": {
+        "title": "Full PPE",
+        "description": "Certified protective equipment for all personnel."
+      },
+      "fleet": {
+        "title": "Technical fleet",
+        "description": "Equipped units ready to respond on site."
       }
     }
   },
   "Gallery": {
     "title": "Our work",
-    "subtitle": "Resorts, lounges, suites and venues we keep clean, safe and smoke-free.",
+    "subtitle": "Real team, real jobs: duct cleaning, HVAC and technical inspection.",
     "teaserTitle": "A glimpse of our work",
-    "teaserSubtitle": "From beachfront resorts to boutique suites across the Riviera Maya.",
+    "teaserSubtitle": "Real interventions on rooftops, kitchens and machine rooms across the Yucatán Peninsula.",
     "cta": "View the full gallery",
     "prev": "Previous image",
     "next": "Next image",
     "goToImage": "Go to image {number}",
     "captions": {
-      "lobbyFireplace": "Lobby lounge fireplace — swept, inspected and certified.",
-      "kitchenExtraction": "Commercial kitchen extraction and duct deep-clean.",
-      "resortPool": "Beachfront resort in the Zona Hotelera, Cancún.",
-      "suiteHearth": "Private suite hearth maintenance and soot removal.",
-      "restaurant": "Restaurant venue kept smoke-free for guests.",
-      "openAirLounge": "Open-air lounge and fire feature, fully serviced.",
-      "guestDining": "Guest dining areas kept fresh, clean and safe.",
-      "boutiqueSuite": "Boutique suite with a spotless, soot-free fireplace."
+      "cameraInspection": "Camera duct inspection (video borescope).",
+      "mechanicalRoom": "Grease-extraction cleaning in a machine room.",
+      "ductMotor": "Servicing an industrial rooftop extractor.",
+      "rooftopDuctwork": "Industrial ventilation ductwork on a rooftop.",
+      "rooftopTech": "Technician in full PPE during service.",
+      "teamRooftop": "Our team on site, ready to intervene."
     }
   },
   "Videos": {
-    "title": "Before & after",
-    "subtitle": "See the difference in under a minute.",
-    "intro": "Short before-and-after videos from real service visits across the Riviera Maya. Replace these with your own footage at any time.",
-    "playLabel": "Play video: {title}",
-    "before": "Before",
-    "after": "After",
+    "title": "Documented work",
+    "subtitle": "Photographic evidence of real interventions.",
+    "intro": "Every service is delivered with a logbook and photographic evidence. Here are a few of our jobs in hotels, kitchens and machine rooms across the region.",
     "items": {
-      "resortChimney": {
-        "title": "Resort lobby chimney",
-        "caption": "A heavily sooted resort flue restored to a clean, safe draft."
+      "ductMotor": {
+        "title": "Rooftop industrial extractor",
+        "caption": "Service and cleaning of a kitchen extractor heavily saturated with grease and soot."
       },
-      "kitchenDuct": {
-        "title": "Kitchen extraction duct",
-        "caption": "Grease-laden kitchen ductwork cleaned to fire-safety standard."
+      "mechanicalRoom": {
+        "title": "Machine room",
+        "caption": "Grease-extraction cleaning with debris removal from the technical floor."
       },
-      "loungeFireplace": {
-        "title": "Lounge fireplace",
-        "caption": "A guest-lounge fireplace cleaned and ready for the evening."
+      "rooftopDuctwork": {
+        "title": "Ventilation ductwork",
+        "caption": "Maintenance of industrial ventilation ducts on a rooftop."
       },
-      "rooftopFlue": {
-        "title": "Rooftop flue & cap",
-        "caption": "Rooftop flue cleared and fitted with a new spark arrestor cap."
-      }
-    }
-  },
-  "Testimonials": {
-    "title": "What our clients say",
-    "subtitle": "Hospitality teams across the Riviera Maya trust us with their properties.",
-    "items": {
-      "oceanview": {
-        "quote": "Riviera Hearth handles all of our fireplaces and kitchen extraction. Punctual, spotless, and our guests never even notice they were here.",
-        "role": "General Manager"
-      },
-      "palmas": {
-        "quote": "The safety certificates made our annual inspection effortless. A genuinely professional, bilingual team we rely on every season.",
-        "role": "Operations Director"
-      },
-      "celeste": {
-        "quote": "Fast, discreet and meticulous. They cleared a blocked flue the night before a full house — true emergency service.",
-        "role": "Owner"
+      "cameraInspection": {
+        "title": "Camera inspection",
+        "caption": "Interior duct diagnosis with a video borescope before intervening."
       }
     }
   },
   "About": {
-    "title": "About Riviera Hearth",
-    "subtitle": "Hospitality-focused chimney and ventilation care, born on the Riviera Maya.",
-    "lead": "We keep the fires, flues and ventilation of the Riviera Maya's finest properties clean, safe and compliant — so hospitality teams can focus on their guests.",
-    "story1": "Riviera Hearth began with a simple observation: the resorts and boutique hotels of Cancún and the Riviera Maya deserve a chimney and ventilation specialist that understands hospitality. Smoke in a suite, a failed inspection, or grease in a kitchen duct isn't just a maintenance issue — it's a guest-experience and safety issue.",
-    "story2": "Today our certified, bilingual crews care for fireplaces, flues and extraction systems across the region. We work on your schedule, protect every guest space, and document everything — combining the rigour of a safety contractor with the discretion the best hotels expect.",
+    "title": "About Nuevo Amanecer",
+    "subtitle": "Industrial maintenance and technical solutions, born in southeastern Mexico.",
+    "lead": "We keep the critical facilities of hotels, hospitals, universities and malls across Cancún, Mérida and the Yucatán Peninsula running, safe and compliant.",
+    "story1": "Desarrolladora Nuevo Amanecer del Sureste was founded to meet a clear need: facilities that cannot stop need a serious technical partner. Grease in a kitchen duct, a ventilation failure or unmaintained equipment isn't just an operational issue — it's a safety and continuity risk.",
+    "story2": "Today, with offices in Cancún and Mérida, our certified crews service extraction ducts, HVAC systems and electromechanical equipment across the region. We work under documented procedures, with current calibration and photographic evidence on every intervention.",
     "missionTitle": "Our mission",
-    "mission": "To set the standard for chimney and ventilation safety in hospitality across the Riviera Maya — clean, certified, and invisible to your guests.",
+    "mission": "To sustain the operational continuity of critical facilities with reliable, documented and safe industrial maintenance.",
     "valuesTitle": "What we stand for",
     "values": {
       "safety": {
         "title": "Safety first",
-        "description": "Every job is measured against fire-safety standards and documented — never a shortcut where guests and staff are concerned."
+        "description": "Every job is measured against safety standards and documented — never a shortcut where people and operations are involved."
       },
-      "discretion": {
-        "title": "Quiet professionalism",
-        "description": "We work around your operation, not through it: clean, uniformed, and gone before the lobby fills up."
+      "documentation": {
+        "title": "Evidence & transparency",
+        "description": "Logbook, before/after photos and a technical report: you always know exactly what was done."
       },
-      "reliability": {
-        "title": "Reliability",
-        "description": "We show up when we say we will, and our reporting means you always know exactly what was done."
+      "continuity": {
+        "title": "Operational continuity",
+        "description": "We plan interventions so your operation never stops and your users aren't affected."
       }
     },
     "serviceAreaTitle": "Where we work",
-    "serviceArea": "We serve hotels, resorts and restaurants across Cancún, Playa del Carmen, Tulum, Puerto Morelos and the wider Riviera Maya.",
-    "certificationsTitle": "Certified & insured",
-    "certifications": "Our technicians are trained to international chimney-safety standards, and every visit is fully insured and documented."
+    "serviceArea": "We serve Cancún, Mérida and the whole Yucatán Peninsula (Yucatán and Quintana Roo), with crews available for critical environments.",
+    "certificationsTitle": "Calibrated equipment & certified staff",
+    "certifications": "We operate with industrial-grade technology and current calibration, and all personnel work with certified protective equipment."
   },
   "Contact": {
-    "title": "Get in touch",
-    "subtitle": "Request a free quote or schedule a service — we reply the same day.",
+    "title": "Request your technical inspection",
+    "subtitle": "We reply within 24 business hours. Immediate attention for emergencies by phone or WhatsApp.",
     "infoTitle": "Contact details",
     "phoneTitle": "Phone",
     "emailTitle": "Email",
     "whatsappTitle": "WhatsApp",
     "whatsappCta": "Message us on WhatsApp",
-    "addressTitle": "Office",
-    "hoursTitle": "Hours",
-    "hours": "Mon–Sat, 7:00–19:00 · 24/7 emergency line",
-    "mapTitle": "Service area map",
-    "formTitle": "Send us a message",
-    "nameLabel": "Name",
+    "addressTitle": "Coverage",
+    "hoursTitle": "Availability",
+    "hours": "24/7 technical support for emergencies · Reply within 24 business hours",
+    "mapTitle": "Service area",
+    "contactsTitle": "Direct contacts",
+    "formTitle": "Request an inspection",
+    "nameLabel": "Full name",
     "emailLabel": "Email",
     "phoneLabel": "Phone (optional)",
-    "companyLabel": "Hotel / company (optional)",
-    "messageLabel": "How can we help?",
-    "send": "Send message",
+    "companyLabel": "Company (optional)",
+    "messageLabel": "Describe the problem or need",
+    "send": "Request inspection",
     "sending": "Sending…",
-    "successTitle": "Message sent",
-    "successBody": "Thanks for reaching out — our team will get back to you the same day.",
+    "successTitle": "Request sent",
+    "successBody": "Thanks for reaching out — our team will reply within 24 business hours.",
     "errorBody": "Something went wrong. Please try again or email us directly.",
     "orEmail": "Or email us at",
     "invalidName": "Please enter your name.",
     "invalidEmail": "Please enter a valid email address.",
-    "invalidMessage": "Please enter a short message (at least 10 characters)."
+    "invalidMessage": "Please briefly describe your need (at least 10 characters)."
   },
   "Cta": {
-    "title": "Ready for a spotless, certified chimney?",
-    "subtitle": "Join the hotels and resorts across the Riviera Maya that trust Riviera Hearth with their fireplaces and ventilation.",
-    "primary": "Request a free quote",
+    "title": "Ready for a technical inspection?",
+    "subtitle": "Join the hotels, hospitals and venues that trust Nuevo Amanecer with their critical-facility maintenance.",
+    "primary": "Request a technical inspection",
     "secondary": "See our services"
   },
   "LanguageSwitcher": {
     "label": "Change language"
   },
   "Footer": {
-    "tagline": "Premium chimney, fireplace and ventilation care for hotels across Cancún and the Riviera Maya.",
+    "tagline": "Industrial maintenance and technical solutions in Cancún and Mérida, for hotels, hospitals, universities, malls and restaurants across the Yucatán Peninsula.",
     "rights": "All rights reserved.",
     "quickLinksTitle": "Explore",
     "contactTitle": "Contact",
-    "followTitle": "Follow us",
-    "serviceArea": "Cancún · Playa del Carmen · Tulum · Riviera Maya",
-    "builtNote": "Placeholder content — details are illustrative."
+    "followTitle": "Get in touch",
+    "serviceArea": "Cancún · Mérida · Yucatán Peninsula",
+    "builtNote": "Cancún · Mérida · Industrial technical service"
   }
 }

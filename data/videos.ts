@@ -1,18 +1,16 @@
 /**
- * Before/after videos. `youtubeId` is a YouTube video id; text resolves to
- * messages → Videos.items.<key>.{title,caption}.
- *
- * These are PLACEHOLDER video ids so the embeds work out of the box. Replace
- * each `youtubeId` with the company's real before/after footage.
+ * Documented-work photos shown on the "Trabajo / Documented work" page.
+ * `src` is a local real job photo; text resolves to messages → Videos.items.<key>.
+ * (The "Videos" message namespace is reused for this section.)
  */
-export interface BeforeAfterVideo {
+export interface WorkPhoto {
   key: string;
-  youtubeId: string;
+  src: string;
 }
 
-export const beforeAfterVideos: BeforeAfterVideo[] = [
-  { key: "resortChimney", youtubeId: "aqz-KE-bpKQ" },
-  { key: "kitchenDuct", youtubeId: "ScMzIvxBSi4" },
-  { key: "loungeFireplace", youtubeId: "ysz5S6PUM-U" },
-  { key: "rooftopFlue", youtubeId: "C0DPdy98e4c" },
+export const workPhotos: WorkPhoto[] = [
+  { key: "ductMotor", src: "/photos/duct-motor.jpg" },
+  { key: "mechanicalRoom", src: "/photos/mechanical-room.jpg" },
+  { key: "rooftopDuctwork", src: "/photos/rooftop-ductwork.jpg" },
+  { key: "cameraInspection", src: "/photos/camera-inspection.jpg" },
 ];

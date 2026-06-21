@@ -29,14 +29,17 @@ describe("NavBar", () => {
   it("renders the brand and page links", () => {
     renderNav();
     expect(screen.getByRole("banner")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Riviera Hearth" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Nuevo Amanecer" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Services" })).toHaveAttribute("href", "/services");
     expect(screen.getByRole("link", { name: "Gallery" })).toHaveAttribute("href", "/gallery");
   });
 
-  it("exposes a quote call-to-action linking to contact", () => {
+  it("exposes an inspection call-to-action linking to contact", () => {
     renderNav();
-    expect(screen.getByRole("link", { name: "Get a quote" })).toHaveAttribute("href", "/contact");
+    expect(screen.getByRole("link", { name: "Request inspection" })).toHaveAttribute(
+      "href",
+      "/contact",
+    );
   });
 
   it("toggles the mobile menu open and closed", async () => {

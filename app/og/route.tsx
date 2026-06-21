@@ -14,19 +14,19 @@ export function GET() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "linear-gradient(135deg, #9a3412 0%, #c2410c 55%, #0f766e 100%)",
-          color: "#fff7ed",
+          background: "linear-gradient(135deg, #075985 0%, #0369a1 55%, #0e7490 100%)",
+          color: "#eff6ff",
           fontFamily: "serif",
         }}
       >
         <div style={{ fontSize: 30, letterSpacing: 6, textTransform: "uppercase", opacity: 0.9 }}>
-          Cancún · Riviera Maya
+          Cancún · Mérida · Península de Yucatán
         </div>
         <div style={{ fontSize: 74, fontWeight: 700, marginTop: 24, lineHeight: 1.05 }}>
           {siteConfig.name}
         </div>
         <div style={{ fontSize: 34, marginTop: 24, opacity: 0.92 }}>
-          Hotel Chimney, Fireplace &amp; Ventilation Care
+          Mantenimiento industrial · Limpieza de ductos y ventilación (HVAC)
         </div>
       </div>
     ),

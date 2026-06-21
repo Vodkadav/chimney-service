@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { galleryImages } from "@/data/gallery";
-import { unsplash } from "@/lib/images";
 import { cn } from "@/lib/utils";
 
 export function GalleryCarousel() {
@@ -32,8 +31,8 @@ export function GalleryCarousel() {
     >
       <div className="border-border-subtle bg-surface relative aspect-[16/10] overflow-hidden rounded-3xl border shadow-[0_30px_80px_-40px_rgba(33,26,21,0.45)]">
         <Image
-          key={current.id}
-          src={unsplash(current.id, 1400)}
+          key={current.src}
+          src={current.src}
           alt={t(`captions.${current.captionKey}`)}
           fill
           sizes="(max-width: 896px) 100vw, 896px"
@@ -66,7 +65,7 @@ export function GalleryCarousel() {
       <div className="mt-4 flex flex-wrap justify-center gap-2">
         {galleryImages.map((img, i) => (
           <button
-            key={img.id}
+            key={img.src}
             type="button"
             onClick={() => go(i)}
             aria-label={t("goToImage", { number: i + 1 })}

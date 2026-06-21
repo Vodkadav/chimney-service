@@ -1,28 +1,30 @@
 /**
- * Gallery photos. `id` is an Unsplash photo id; `captionKey` resolves to
- * messages → Gallery.captions.<key> in the active locale.
- * Swap these for the company's own photography when available.
+ * Gallery photos. `src` is a ready-to-use image URL (local real photo in
+ * /public/photos); `captionKey` resolves to messages → Gallery.captions.<key>
+ * in the active locale.
+ *
+ * These are the client's own job photos (real crew, real industrial duct/HVAC work).
  */
 export interface GalleryImage {
-  id: string;
+  src: string;
   captionKey: string;
 }
 
 export const galleryImages: GalleryImage[] = [
-  { id: "1560448204-e02f11c3d0e2", captionKey: "lobbyFireplace" },
-  { id: "1556912173-3bb406ef7e77", captionKey: "kitchenExtraction" },
-  { id: "1551882547-ff40c63fe5fa", captionKey: "resortPool" },
-  { id: "1611892440504-42a792e24d32", captionKey: "suiteHearth" },
-  { id: "1517248135467-4c7edcad34c4", captionKey: "restaurant" },
-  { id: "1571896349842-33c89424de2d", captionKey: "openAirLounge" },
-  { id: "1414235077428-338989a2e8c0", captionKey: "guestDining" },
-  { id: "1582719478250-c89cae4dc85b", captionKey: "boutiqueSuite" },
+  { src: "/photos/camera-inspection.jpg", captionKey: "cameraInspection" },
+  { src: "/photos/mechanical-room.jpg", captionKey: "mechanicalRoom" },
+  { src: "/photos/duct-motor.jpg", captionKey: "ductMotor" },
+  { src: "/photos/rooftop-ductwork.jpg", captionKey: "rooftopDuctwork" },
+  { src: "/photos/rooftop-tech.jpg", captionKey: "rooftopTech" },
+  { src: "/photos/team-rooftop.jpg", captionKey: "teamRooftop" },
 ];
 
-/** Hero / feature imagery reused across pages. */
+/**
+ * Hero / feature imagery. The hero uses a locally AI-generated industrial scene
+ * (no people, commercial-safe SDXL — see CREDITS.md); the About image uses a real
+ * job photo.
+ */
 export const featureImages = {
-  hero: "1564501049412-61c2a3083791",
-  resort: "1551882547-ff40c63fe5fa",
-  lounge: "1560448204-e02f11c3d0e2",
-  suite: "1611892440504-42a792e24d32",
+  hero: "/photos/gen-rooftop-hvac.png",
+  about: "/photos/camera-inspection.jpg",
 } as const;

@@ -5,8 +5,8 @@ export interface Stat {
 }
 
 export const stats: Stat[] = [
-  { key: "resorts", value: "200+" },
-  { key: "years", value: "15" },
-  { key: "response", value: "24/7" },
-  { key: "certified", value: "100%" },
+  { key: "support", value: "24/7" },
+  { key: "offices", value: "2" },
+  { key: "response", value: "<24 h" },
+  { key: "documented", value: "100%" },
 ];

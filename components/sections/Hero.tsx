@@ -1,10 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { ArrowRight, Star } from "lucide-react";
+import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Heading } from "@/components/ui/heading";
 import { featureImages } from "@/data/gallery";
-import { unsplash } from "@/lib/images";
 
 export function Hero() {
   const t = useTranslations("Hero");
@@ -13,20 +12,20 @@ export function Hero() {
     <section className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <Image
-          src={unsplash(featureImages.hero, 1920)}
+          src={featureImages.hero}
           alt=""
           fill
           priority
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a120c]/85 via-[#1a120c]/55 to-[#1a120c]/20" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f2a]/85 via-[#0b1f2a]/55 to-[#0b1f2a]/20" />
         <div className="from-background absolute inset-0 bg-gradient-to-t via-transparent to-transparent" />
       </div>
 
       <div className="mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-center px-6 py-32 text-white">
         <p className="border-accent/40 bg-accent/10 mb-6 inline-flex w-fit items-center gap-2 rounded-full border px-4 py-1.5 text-sm font-semibold tracking-wide text-white backdrop-blur-md">
-          <Star className="size-3.5 fill-current" aria-hidden />
+          <ShieldCheck className="size-3.5" aria-hidden />
           {t("eyebrow")}
         </p>
 

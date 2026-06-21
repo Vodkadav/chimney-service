@@ -1,33 +1,45 @@
 /**
- * Non-localised brand + contact metadata.
+ * Non-localised brand + contact metadata for Desarrolladora Nuevo Amanecer.
  *
- * Swap these placeholder values for the real business details — they are the
- * single source of truth used across the layout, footer, contact page, and SEO.
+ * Single source of truth used across the layout, footer, contact page, and SEO.
  * `url` is the build-time fallback; production reads NEXT_PUBLIC_SITE_URL first
  * (see app/sitemap.ts, robots.ts, [locale]/layout.tsx).
  */
 export const siteConfig = {
-  name: "Riviera Hearth",
-  legalName: "Riviera Hearth Chimney Care S.A. de C.V.",
+  name: "Nuevo Amanecer",
+  legalName: "Desarrolladora Nuevo Amanecer del Sureste S.A. de C.V.",
   url: "https://chimney-service.vercel.app",
 
-  // Public contact details (placeholders — replace with the real ones).
-  email: "hola@rivierahearth.mx",
-  phone: "+52 998 123 4567",
+  // Public business line (matches the client's live site nuevoamanecer.company).
+  email: "dnasolution66@gmail.com",
+  phone: "+52 998 154 0967",
   // E.164 digits only, used to build the wa.me link.
-  whatsapp: "529981234567",
+  whatsapp: "529981540967",
+  // Pre-filled WhatsApp message.
+  whatsappText: "Hola, quiero información sobre sus servicios",
   address: {
-    street: "Blvd. Kukulcan Km 9, Zona Hotelera",
-    city: "Cancún, Quintana Roo 77500",
+    street: "Cancún · Mérida",
+    city: "Península de Yucatán, México",
     country: "México",
   },
   // Used for the Google Maps embed query on the contact page.
-  mapsQuery: "Zona Hotelera, Cancún, Quintana Roo, México",
+  mapsQuery: "Cancún, Quintana Roo, México",
 
-  social: {
-    instagram: "https://instagram.com/rivierahearth",
-    facebook: "https://facebook.com/rivierahearth",
-  },
+  // Named contacts shown on the contact page (the client asked to show both).
+  contacts: [
+    {
+      name: "Lázaro Rondón Martínez",
+      role: "Director General",
+      email: "lazarorondon66@yahoo.com",
+      phone: "+52 998 154 0967",
+    },
+    {
+      name: "Marcos Machado Rosales",
+      role: "Gerente Comercial",
+      email: "marcosmachadorosales91@gmail.com",
+      phone: "+52 998 322 2916",
+    },
+  ],
 } as const;
 
 /**
