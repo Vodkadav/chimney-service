@@ -8,7 +8,7 @@
 export const siteConfig = {
   name: "Nuevo Amanecer",
   legalName: "Desarrolladora Nuevo Amanecer del Sureste S.A. de C.V.",
-  url: "https://chimney-service.vercel.app",
+  url: "https://chimney-service-cancun.vercel.app",
 
   // Public business line (matches the client's live site nuevoamanecer.company).
   email: "dnasolution66@gmail.com",

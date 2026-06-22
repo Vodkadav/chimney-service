@@ -25,19 +25,25 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
 - [x] **Real contacts:** business line (dnasolution66@gmail.com / +52 998 154 0967)
       + Director (Lázaro Rondón) + Comercial (Marcos Machado)
 - [x] CI gate (lint → typecheck → test → build) green; 39 tests passing
-- [~] AI imagery (client asked for "real crew in AI scenes")
-  - Local generator is SDXL **text-to-image only** — faithful real faces need a
-    face-swap/LoRA pipeline we don't have, so that exact ask isn't possible locally
-  - Real photos already supply the real crew; optional **no-face thematic** AI
-    originals (duct interiors, rooftop HVAC) can be generated to taste
+- [x] AI imagery — no-face thematic SDXL originals generated + wired: twilight rooftop
+      AHUs as the **hero**, gleaming spiral ductwork as the **CTA-band** background
+      (kitchen hood / blower / golden-hour rooftop / clean-duct kept as spares).
+      Recorded in `CREDITS.md`. Gallery/before-after deliberately stay real photos only.
+  - The client's exact "real crew in AI scenes" ask is **not possible locally** — SDXL
+    is text-to-image only (no faithful face-swap/LoRA pipeline); real crew photos cover it
 - [x] Committed (`147a6b6`) + pushed to `main`; Vercel auto-deployed — **build green**
-- [ ] **Manual — makes the site public:** Vercel serves it behind **Deployment
-      Protection** (the public currently gets HTTP 401). Turn it off for Production:
-      Vercel → Project `chimney-service` → Settings → Deployment Protection → set
-      Vercel Authentication to off / "Only Preview Deployments". Then set
-      `NEXT_PUBLIC_SITE_URL` to the production domain and redeploy.
-- [ ] **Manual:** add `NEXT_PUBLIC_WEB3FORMS_KEY` for the live contact form
-      (until then it falls back to a `mailto:` link)
+- [x] **Live & public** at **https://chimney-service-cancun.vercel.app/en** (HTTP 200,
+      Deployment Protection off — verified). NB: the bare `chimney-service.vercel.app`
+      is a **different, unrelated** project ("#1 Kitchen Chimney Service"), not ours.
+- [x] Canonical/OG/sitemap URL fixed in code — `data/site.ts` `url` now points to
+      `chimney-service-cancun.vercel.app` (was the wrong bare domain). Takes effect on
+      next deploy. Optionally also set `NEXT_PUBLIC_SITE_URL` in Vercel (overrides it).
+- [~] **Web3Forms** key created (`chimneycontactform`); added to local `.env.local`.
+      Still needed: set `NEXT_PUBLIC_WEB3FORMS_KEY` in Vercel env + redeploy (NEXT_PUBLIC
+      vars are build-time, so the live build won't have it until a fresh deploy). Set the
+      recipient inbox in the Web3Forms dashboard (Linked Emails / form Settings).
+- [~] **Pending deploy:** stats paint-order fix + new AI hero/CTA imagery + URL fix are
+      committed-ready locally but **not yet pushed**, so they're not live yet.
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
 - [ ] Optional: attach paid custom domain
@@ -58,26 +64,41 @@ Verify the gate any time: `npm run lint && npm run typecheck && npm test && npm 
 
 ## Deploy state & manual steps
 
-The Vercel project is connected and **auto-deploys on push to `main`** (last deploy:
-commit `147a6b6`, build green). What's left is all in the Vercel dashboard:
+**Live & public:** https://chimney-service-cancun.vercel.app/en (HTTP 200, verified
+2026-06-22). Auto-deploys on push to `main`. ⚠️ The bare `chimney-service.vercel.app`
+is a **different, unrelated** project — never use it; ours is the `-cancun` host.
 
-1. **Make it public** — the site currently returns **HTTP 401** to anyone not logged
-   in: Vercel → Project `chimney-service` → Settings → **Deployment Protection** →
-   turn Vercel Authentication off for Production (or "Only Preview Deployments").
-2. **Set the canonical URL** — set `NEXT_PUBLIC_SITE_URL` (Settings → Environment
-   Variables) to the production domain so metadata/sitemap/OG use it, then redeploy.
-3. **Web3Forms key** (~2 min) — create a free key at https://web3forms.com, verify
-   the email, set `NEXT_PUBLIC_WEB3FORMS_KEY`. Until then the contact form falls back
-   to a `mailto:` link, so the site is still usable.
-4. *(Optional, later)* attach a paid custom domain in Vercel → Settings → Domains.
+### Next session — start here (resume guide)
 
-Reference for the remaining real content (addresses, hours, testimonials, logo):
-`docs/Formulario-de-Contenido.docx` and `docs/reference-existing-site.md`.
+Everything code-side is done and deployed. Remaining work is all in the **Vercel /
+Web3Forms dashboards** (no code needed):
+
+1. **Web3Forms — finish the live contact form.** A key already exists (form
+   `chimneycontactform`, key `b0b81ae9-b462-4e36-8f83-0c4c78e7e230` — public by design,
+   safe to commit). It's in local `.env.local` already. To go live:
+   - Vercel → Project → **Settings → Environment Variables** → add
+     `NEXT_PUBLIC_WEB3FORMS_KEY = b0b81ae9-b462-4e36-8f83-0c4c78e7e230` (Production), then
+     **redeploy** (NEXT_PUBLIC vars are build-time — a redeploy is required to bake it in).
+   - In the **Web3Forms dashboard** set the **recipient inbox** (Linked Emails / form
+     Settings) to the address that should receive leads (e.g. `dnasolution66@gmail.com`).
+   - Free plan = **one** recipient. A 2nd inbox needs the Pro plan (`ccemail`, `;`-sep) —
+     or just add a Gmail auto-forward. Until the key is live, the form falls back to
+     `mailto:`, so the site still works.
+2. *(Optional)* `NEXT_PUBLIC_SITE_URL` — not required anymore (code fallback is now the
+   correct `-cancun` URL). Only set it if/when a **custom domain** is attached.
+3. *(Optional, later)* attach a paid custom domain in Vercel → **Settings → Domains**,
+   then set `NEXT_PUBLIC_SITE_URL` to it and redeploy.
+4. **Pending real content from the client** (no blocker to being live): exact street
+   addresses, office hours, consented testimonials, social links, logo/brand mark —
+   collect via `docs/Formulario-de-Contenido.docx`; structure in `docs/reference-existing-site.md`.
+
+Verify live any time: `curl -s -o /dev/null -w "%{http_code}" https://chimney-service-cancun.vercel.app/en` (expect 200).
 
 ## Notes
 
 - Created 2026-06-21; reframed to Nuevo Amanecer the same day.
-- Real client job photos live in `public/photos/`; the hero uses a matching
-  industrial Unsplash photo. Content is wired from `data/*.ts` + `messages/{en,es}.json`.
+- Real client job photos live in `public/photos/` (gallery/before-after/about);
+  the hero + CTA band use locally-generated no-face AI imagery (`gen-*.png`, see
+  `CREDITS.md`). Content is wired from `data/*.ts` + `messages/{en,es}.json`.
 - The Spanish client intake form (`docs/Formulario-de-Contenido.docx`) can still be
   used to collect the remaining real details (addresses, hours, testimonials, logo).

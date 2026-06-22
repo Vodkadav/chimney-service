@@ -1,14 +1,24 @@
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { Heading } from "@/components/ui/heading";
+import { featureImages } from "@/data/gallery";
 
 export function CtaBand() {
   const t = useTranslations("Cta");
 
   return (
     <section className="mx-auto max-w-6xl px-6 py-20">
-      <div className="from-accent-strong to-accent relative overflow-hidden rounded-3xl bg-gradient-to-br px-8 py-14 text-center text-white shadow-[0_30px_80px_-40px_var(--accent)] sm:px-14">
+      <div className="relative isolate overflow-hidden rounded-3xl px-8 py-14 text-center text-white shadow-[0_30px_80px_-40px_var(--accent)] sm:px-14">
+        <Image
+          src={featureImages.cta}
+          alt=""
+          fill
+          sizes="(max-width: 1152px) 100vw, 1152px"
+          className="object-cover"
+        />
+        <div className="from-accent-strong/95 to-accent/85 absolute inset-0 bg-gradient-to-br" />
         <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,#fff_0,transparent_40%)]" />
         <div className="relative">
           <Heading size="section" className="mx-auto max-w-2xl text-white">

@@ -20,11 +20,12 @@ export const galleryImages: GalleryImage[] = [
 ];
 
 /**
- * Hero / feature imagery. The hero uses a locally AI-generated industrial scene
- * (no people, commercial-safe SDXL — see CREDITS.md); the About image uses a real
- * job photo.
+ * Hero / feature imagery. The hero and CTA band use locally AI-generated industrial
+ * scenes (no people, commercial-safe SDXL — see CREDITS.md); the About image uses a
+ * real job photo.
  */
 export const featureImages = {
-  hero: "/photos/gen-rooftop-hvac.png",
+  hero: "/photos/gen-rooftop-ahu.png",
+  cta: "/photos/gen-spiral-ductwork.png",
   about: "/photos/camera-inspection.jpg",
 } as const;
