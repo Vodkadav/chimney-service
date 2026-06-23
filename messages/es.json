@@ -187,6 +187,15 @@
       "teamRooftop": "Nuestro equipo en sitio, listo para intervenir."
     }
   },
+  "VideoDemo": {
+    "title": "Ejemplo en video de la limpieza",
+    "subtitle": "Vea la diferencia que hace una intervención profesional: material real de uno de nuestros trabajos de limpieza de ductos.",
+    "before": "Antes",
+    "after": "Después",
+    "beforeCaption": "Ducto de extracción muy saturado de grasa y hollín, antes de nuestra intervención.",
+    "afterPlaceholder": "Video del después próximamente",
+    "afterCaption": "El mismo ducto después de nuestra intervención de limpieza de ductos."
+  },
   "Videos": {
     "title": "Trabajo documentado",
     "subtitle": "Evidencia fotográfica de intervenciones reales.",

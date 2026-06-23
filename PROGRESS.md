@@ -38,10 +38,10 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
 - [x] Canonical/OG/sitemap URL fixed in code — `data/site.ts` `url` now points to
       `chimney-service-cancun.vercel.app` (was the wrong bare domain). Takes effect on
       next deploy. Optionally also set `NEXT_PUBLIC_SITE_URL` in Vercel (overrides it).
-- [~] **Web3Forms** key created (`chimneycontactform`); added to local `.env.local`.
-      Still needed: set `NEXT_PUBLIC_WEB3FORMS_KEY` in Vercel env + redeploy (NEXT_PUBLIC
-      vars are build-time, so the live build won't have it until a fresh deploy). Set the
-      recipient inbox in the Web3Forms dashboard (Linked Emails / form Settings).
+- [x] **Web3Forms live:** `NEXT_PUBLIC_WEB3FORMS_KEY` set in Vercel + redeployed; key is
+      baked into the live bundle (verified 2026-06-23), so the contact form now submits
+      directly instead of falling back to `mailto:`. (Confirm the recipient inbox is set in
+      the Web3Forms dashboard — Linked Emails / form Settings — to receive leads.)
 - [x] **Deployed:** stats paint-order fix + new AI hero/CTA imagery + URL fix pushed
       (`2889c9c` on `origin/main`) and live (HTTP 200, verified 2026-06-23).
 - [x] **Navbar readability:** desktop links grouped into a frosted pill (matches the
@@ -54,6 +54,12 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
       origin so any stray path is stripped; layout/sitemap/robots all consume it.
       Verified: a build with the bad env value now emits correct single-locale URLs.
       Optional cleanup: also delete/fix the Vercel env var (code default is already correct).
+- [x] **Gallery Before/After video section:** self-hosted, trimmed MP4s in
+      `/public/videos` (before = `start.ts` 1:42–2:07 / 25s, after = `1.ts`
+      0:20–0:50 / 30s), native HTML5 player (poster + click-to-play, muted);
+      `BeforeAfterVideo` section + `cleaningVideo` in `data/gallery.ts`, EN/ES copy
+      under `VideoDemo`, `*.mp4` marked binary. Set `afterSrc: null` to revert the
+      after cell to a placeholder.
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
 - [ ] Optional: attach paid custom domain

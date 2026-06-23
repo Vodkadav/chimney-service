@@ -29,3 +29,22 @@ export const featureImages = {
   cta: "/photos/gen-spiral-ductwork.png",
   about: "/photos/camera-inspection.jpg",
 } as const;
+
+/**
+ * Before/after cleaning footage shown on the gallery page — self-hosted, trimmed
+ * MP4s of a real job. Set `afterSrc` to `null` to show a "coming soon" placeholder
+ * in the after cell instead.
+ */
+export interface CleaningVideo {
+  beforeSrc: string;
+  beforePoster: string;
+  afterSrc: string | null;
+  afterPoster: string | null;
+}
+
+export const cleaningVideo: CleaningVideo = {
+  beforeSrc: "/videos/before-cleaning.mp4",
+  beforePoster: "/videos/before-cleaning-poster.jpg",
+  afterSrc: "/videos/after-cleaning.mp4",
+  afterPoster: "/videos/after-cleaning-poster.jpg",
+};

@@ -187,6 +187,15 @@
       "teamRooftop": "Our team on site, ready to intervene."
     }
   },
+  "VideoDemo": {
+    "title": "Video example of cleaning",
+    "subtitle": "See the difference a professional intervention makes — real footage from one of our duct-cleaning jobs.",
+    "before": "Before",
+    "after": "After",
+    "beforeCaption": "Extraction duct heavily saturated with grease and soot, before our intervention.",
+    "afterPlaceholder": "After footage coming soon",
+    "afterCaption": "The same duct after our extraction-duct cleaning intervention."
+  },
   "Videos": {
     "title": "Documented work",
     "subtitle": "Photographic evidence of real interventions.",
