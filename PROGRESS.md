@@ -42,8 +42,11 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
       Still needed: set `NEXT_PUBLIC_WEB3FORMS_KEY` in Vercel env + redeploy (NEXT_PUBLIC
       vars are build-time, so the live build won't have it until a fresh deploy). Set the
       recipient inbox in the Web3Forms dashboard (Linked Emails / form Settings).
-- [~] **Pending deploy:** stats paint-order fix + new AI hero/CTA imagery + URL fix are
-      committed-ready locally but **not yet pushed**, so they're not live yet.
+- [x] **Deployed:** stats paint-order fix + new AI hero/CTA imagery + URL fix pushed
+      (`2889c9c` on `origin/main`) and live (HTTP 200, verified 2026-06-23).
+- [x] **Navbar readability:** desktop links grouped into a frosted pill (matches the
+      language-switcher pill), higher-contrast text + accent hover, solid accent chip for
+      the active page; mobile menu links moved off the washed-out muted gray.
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
 - [ ] Optional: attach paid custom domain

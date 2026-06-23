@@ -41,17 +41,17 @@ export function NavBar() {
           <Logo />
         </Link>
 
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="border-border-subtle bg-surface/80 hidden items-center gap-1 rounded-full border px-1.5 py-1 shadow-sm backdrop-blur-md lg:flex">
           {LINKS.map(({ href, key }) => (
             <li key={key}>
               <Link
                 href={href}
                 aria-current={isActive(href) ? "page" : undefined}
                 className={cn(
-                  "rounded-full px-3.5 py-2 text-sm font-medium transition-colors",
+                  "block rounded-full px-3.5 py-1.5 text-sm transition-colors",
                   isActive(href)
-                    ? "text-accent"
-                    : "text-muted hover:text-foreground",
+                    ? "bg-accent font-semibold text-white shadow-sm"
+                    : "text-foreground/75 hover:text-accent hover:bg-foreground/5 font-medium",
                 )}
               >
                 {t(key)}
@@ -91,7 +91,7 @@ export function NavBar() {
                   aria-current={isActive(href) ? "page" : undefined}
                   className={cn(
                     "block py-3 text-base font-medium",
-                    isActive(href) ? "text-accent" : "text-muted hover:text-foreground",
+                    isActive(href) ? "text-accent" : "text-foreground/80 hover:text-accent",
                   )}
                 >
                   {t(key)}
