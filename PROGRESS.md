@@ -47,6 +47,13 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
 - [x] **Navbar readability:** desktop links grouped into a frosted pill (matches the
       language-switcher pill), higher-contrast text + accent hover, solid accent chip for
       the active page; mobile menu links moved off the washed-out muted gray.
+- [x] **SEO URL hardening:** the live site was emitting doubled `/en/en` canonicals +
+      sitemap URLs and a wrong `/en/sitemap.xml` robots pointer, because the Vercel
+      `NEXT_PUBLIC_SITE_URL` env var carried a stray `/en` (copied from the address bar).
+      Centralised the URL into `lib/site-url.ts` (`siteOrigin`), normalised to a bare
+      origin so any stray path is stripped; layout/sitemap/robots all consume it.
+      Verified: a build with the bad env value now emits correct single-locale URLs.
+      Optional cleanup: also delete/fix the Vercel env var (code default is already correct).
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
 - [ ] Optional: attach paid custom domain

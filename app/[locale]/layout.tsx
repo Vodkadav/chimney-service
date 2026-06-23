@@ -6,11 +6,10 @@ import { Inter, Fraunces } from "next/font/google";
 import "../globals.css";
 import { routing } from "@/i18n/routing";
 import { siteConfig } from "@/data/site";
+import { siteOrigin } from "@/lib/site-url";
 import { NavBar } from "@/components/layout/NavBar";
 import { Footer } from "@/components/layout/Footer";
 import { SiteBackground } from "@/components/ui/site-background";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? siteConfig.url;
 
 export const viewport: Viewport = {
   themeColor: "#faf7f2",
@@ -37,7 +36,7 @@ export async function generateMetadata({ params }: LocaleParams): Promise<Metada
   const description = t("description");
 
   return {
-    metadataBase: new URL(siteUrl),
+    metadataBase: new URL(siteOrigin),
     title: { default: title, template: `%s — ${siteConfig.name}` },
     description,
     icons: { icon: [{ url: "/favicon.svg", type: "image/svg+xml" }] },
