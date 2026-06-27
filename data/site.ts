@@ -13,8 +13,11 @@ export const siteConfig = {
   // Public business line (matches the client's live site nuevoamanecer.company).
   email: "dnasolution66@gmail.com",
   phone: "+52 998 154 0967",
-  // E.164 digits only, used to build the wa.me link.
-  whatsapp: "529981540967",
+  // E.164 digits + display label, used to build the wa.me links (both reachable lines).
+  whatsapps: [
+    { number: "529981540967", display: "+52 998 154 0967" },
+    { number: "529983222916", display: "+52 998 322 2916" },
+  ],
   // Pre-filled WhatsApp message.
   whatsappText: "Hola, quiero información sobre sus servicios",
   address: {

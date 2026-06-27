@@ -5,7 +5,6 @@ import { siteConfig } from "@/data/site";
 
 export function ContactInfo() {
   const t = useTranslations("Contact");
-  const waLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappText)}`;
 
   const rows = [
     {
@@ -15,7 +14,12 @@ export function ContactInfo() {
       href: `tel:${siteConfig.phone.replace(/\s/g, "")}`,
     },
     { Icon: Mail, title: t("emailTitle"), value: siteConfig.email, href: `mailto:${siteConfig.email}` },
-    { Icon: WhatsappIcon, title: t("whatsappTitle"), value: t("whatsappCta"), href: waLink },
+    ...siteConfig.whatsapps.map((wa) => ({
+      Icon: WhatsappIcon,
+      title: t("whatsappTitle"),
+      value: wa.display,
+      href: `https://wa.me/${wa.number}?text=${encodeURIComponent(siteConfig.whatsappText)}`,
+    })),
   ];
 
   return (
@@ -24,7 +28,7 @@ export function ContactInfo() {
         <h2 className="font-display text-foreground text-xl font-bold">{t("infoTitle")}</h2>
         <ul className="mt-5 space-y-4">
           {rows.map(({ Icon, title, value, href }) => (
-            <li key={title}>
+            <li key={href}>
               <a
                 href={href}
                 target={href.startsWith("http") ? "_blank" : undefined}

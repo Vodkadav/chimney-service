@@ -17,7 +17,6 @@ export function Footer() {
   const t = useTranslations("Footer");
   const tn = useTranslations("Nav");
   const year = new Date().getFullYear();
-  const waLink = `https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(siteConfig.whatsappText)}`;
 
   return (
     <footer className="border-border-subtle bg-surface relative mt-24 border-t">
@@ -65,16 +64,19 @@ export function Footer() {
 
         <div className="flex flex-col gap-3">
           <p className="text-foreground font-display text-sm font-semibold">{t("followTitle")}</p>
-          <a
-            href={waLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="WhatsApp"
-            className="border-border-subtle text-muted hover:text-accent hover:border-accent/50 inline-flex w-fit items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors"
-          >
-            <WhatsappIcon className="size-4" />
-            WhatsApp
-          </a>
+          {siteConfig.whatsapps.map((wa) => (
+            <a
+              key={wa.number}
+              href={`https://wa.me/${wa.number}?text=${encodeURIComponent(siteConfig.whatsappText)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`WhatsApp ${wa.display}`}
+              className="border-border-subtle text-muted hover:text-accent hover:border-accent/50 inline-flex w-fit items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors"
+            >
+              <WhatsappIcon className="size-4 shrink-0" />
+              {wa.display}
+            </a>
+          ))}
         </div>
       </div>
 
