@@ -60,6 +60,9 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
       `BeforeAfterVideo` section + `cleaningVideo` in `data/gallery.ts`, EN/ES copy
       under `VideoDemo`, `*.mp4` marked binary. Set `afterSrc: null` to revert the
       after cell to a placeholder.
+- [ ] Site-review improvement pass (2026-07-11) — 2 hero-contrast fixes + JSON-LD,
+      WhatsApp float, CTA phone, skip link, form privacy note. Sonnet-ready plan:
+      `docs/IMPROVEMENT-PLAN.md`
 - [ ] Pending real details from the client: exact street addresses, office hours,
       consented testimonials, social links, logo/brand mark
 - [ ] Optional: attach paid custom domain
