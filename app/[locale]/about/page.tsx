@@ -21,7 +21,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return pageMetadata(locale, "aboutTitle", "aboutDesc");
+  return pageMetadata(locale, "aboutTitle", "aboutDesc", "/about");
 }
 
 export default async function AboutPage({ params }: Props) {

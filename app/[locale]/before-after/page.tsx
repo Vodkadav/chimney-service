@@ -16,7 +16,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return pageMetadata(locale, "beforeAfterTitle", "beforeAfterDesc");
+  return pageMetadata(locale, "beforeAfterTitle", "beforeAfterDesc", "/before-after");
 }
 
 export default async function BeforeAfterPage({ params }: Props) {

@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return pageMetadata(locale, "galleryTitle", "galleryDesc");
+  return pageMetadata(locale, "galleryTitle", "galleryDesc", "/gallery");
 }
 
 export default async function GalleryPage({ params }: Props) {

@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  return pageMetadata(locale, "contactTitle", "contactDesc");
+  return pageMetadata(locale, "contactTitle", "contactDesc", "/contact");
 }
 
 export default async function ContactPage({ params }: Props) {
