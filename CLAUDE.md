@@ -4,6 +4,10 @@ Premium bilingual (EN/ES) marketing site for a Cancún hotel chimney-cleaning
 business. Next.js 16 (App Router) + next-intl + Tailwind v4 + Vitest + Playwright.
 Deploys to Vercel.
 
+Rules profile: rigor — exempt: i18n-no-hardcoded-strings (EN/ES market — locale
+parity is EN+ES here, enforced by `messages/messages.test.ts`, not the historical
+EN+ES+DA set)
+
 ## Conventions
 
 - **All user-facing copy** lives in `messages/en.json` + `messages/es.json`. Keys
