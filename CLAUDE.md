@@ -1,8 +1,10 @@
-# Riviera Hearth — project notes
+# Nuevo Amanecer — project notes
 
-Premium bilingual (EN/ES) marketing site for a Cancún hotel chimney-cleaning
-business. Next.js 16 (App Router) + next-intl + Tailwind v4 + Vitest + Playwright.
-Deploys to Vercel.
+Premium bilingual (EN/ES) marketing site for Desarrolladora Nuevo Amanecer del
+Sureste S.A. de C.V., an industrial duct/HVAC ventilation cleaning and preventive
+maintenance company serving Cancún and Mérida. Reframed from an original
+"Riviera Hearth" hotel-chimney template — see `PROGRESS.md`. Next.js 16
+(App Router) + next-intl + Tailwind v4 + Vitest + Playwright. Deploys to Vercel.
 
 Rules profile: rigor — exempt: i18n-no-hardcoded-strings (EN/ES market — locale
 parity is EN+ES here, enforced by `messages/messages.test.ts`, not the historical

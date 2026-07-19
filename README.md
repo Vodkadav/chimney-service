@@ -1,25 +1,32 @@
-# Riviera Hearth — Hotel Chimney Service (Cancún)
+# Nuevo Amanecer — Industrial Duct/HVAC Cleaning (Cancún & Mérida)
 
-A premium, bilingual (English/Spanish) marketing website for a hotel chimney,
-fireplace and ventilation cleaning company serving Cancún and the Riviera Maya.
+A premium, bilingual (English/Spanish) marketing website for **Desarrolladora Nuevo
+Amanecer del Sureste S.A. de C.V.**, an industrial duct/HVAC ventilation cleaning
+and preventive technical maintenance company serving hotels, hospitals,
+universities, malls and restaurants in Cancún and Mérida.
 
-> **Placeholder content.** The brand name ("Riviera Hearth"), copy, contact
-> details, testimonials, gallery photos and before/after videos are all
-> illustrative placeholders. See [Editing your content](#editing-your-content)
-> to swap in the real business details.
+> Built on this repo, originally scaffolded as a "Riviera Hearth" hotel-chimney
+> template; the site has since been fully reframed to the real client
+> (Nuevo Amanecer). See [`docs/reference-existing-site.md`](docs/reference-existing-site.md)
+> for the reframe source of truth and [`PROGRESS.md`](PROGRESS.md) for current status.
 
 ## Features
 
-- **Premium, responsive design** — warm editorial light theme (serif display +
-  Tailwind v4), full-bleed hero, slick page-to-page navigation, mobile menu.
+- **Premium, responsive design** — steel-blue/cyan industrial theme (serif display
+  + Tailwind v4), full-bleed hero, slick page-to-page navigation, mobile menu.
 - **Bilingual EN/ES** — `next-intl` with locale-prefixed routes (`/en`, `/es`),
   a flag language switcher, and every string translated. A test enforces
   key-parity between the two catalogs.
-- **Pages** — Home, Services, Gallery (carousel with captions), Before & After
-  (lazy-loaded YouTube embeds), About, Contact.
+- **Pages** — Home, Services, Gallery (carousel with captions), Documented work
+  (before/after video), About, Contact.
+- **Sections** — Sectores atendidos (sectors served) and Equipamiento (equipment)
+  on the home page, alongside services, process and stats.
 - **Contact form** — validated, accessible, submits via [Web3Forms](https://web3forms.com)
   (no backend); falls back to a `mailto:` link when no key is configured.
-- **Gallery carousel** — keyboard-accessible, captioned, with dot navigation.
+- **Gallery carousel** — keyboard-accessible, captioned, with dot navigation,
+  backed by the client's own real job photos.
+- **Before/after video** — self-hosted, trimmed MP4s of a real job (native HTML5
+  player, poster + click-to-play, muted).
 - **SEO** — per-locale metadata, `hreflang` alternates, dynamic OG image
   (`/og`), `sitemap.xml`, `robots.txt`.
 - **Accessible** — WCAG-AA contrast, visible focus, reduced-motion support,
@@ -32,11 +39,16 @@ fireplace and ventilation cleaning company serving Cancún and the Riviera Maya.
 - **Vitest + Testing Library** (unit/component) · **Playwright** (e2e)
 - Deployed on **Vercel** (free tier; custom domain attachable later)
 
-## Getting started
+## Installation
 
 ```bash
 npm install
 cp .env.example .env.local   # optional — fill in for the live contact form
+```
+
+## Usage
+
+```bash
 npm run dev                  # http://localhost:3000  (redirects to /en)
 ```
 
@@ -55,20 +67,25 @@ npm run dev                  # http://localhost:3000  (redirects to /en)
 ## Editing your content
 
 - **Brand & contact details:** `data/site.ts` (name, phone, email, WhatsApp,
-  address, social links).
+  address, named contacts).
 - **Copy / translations:** `messages/en.json` and `messages/es.json` — every key
   must exist in both (enforced by `messages/messages.test.ts`).
-- **Services / features / process / stats / testimonials:** the `data/*.ts`
-  modules (structure + icons) paired with the matching `messages` keys.
-- **Gallery photos:** `data/gallery.ts` (Unsplash photo ids; replace with your
-  own). **Before/after videos:** `data/videos.ts` (YouTube ids — currently
-  placeholders).
+- **Services / features / process / stats / sectors / equipment:** the
+  `data/*.ts` modules (structure + icons) paired with the matching `messages`
+  keys.
+- **Gallery photos:** `data/gallery.ts` (local files in `public/photos/`, real
+  client job photos plus AI-generated hero/CTA imagery — see `CREDITS.md`).
+  **Before/after video:** `data/videos.ts` and `data/gallery.ts`
+  (`cleaningVideo`, self-hosted MP4s in `public/videos/`).
 
 ## Deployment
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the one-time Vercel + Web3Forms
 setup and how to attach a custom domain later. CI (lint → typecheck → test →
 build) runs on every push via GitHub Actions.
+
+**Live & public:** https://chimney-service-cancun.vercel.app/en — the bare
+`chimney-service.vercel.app` is a **different, unrelated** project, never ours.
 
 ## Documentation
 

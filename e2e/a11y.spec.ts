@@ -4,6 +4,9 @@ import AxeBuilder from "@axe-core/playwright";
 const pages = [
   { name: "home", path: "/en" },
   { name: "services", path: "/en/services" },
+  { name: "gallery", path: "/en/gallery" },
+  { name: "before-after", path: "/en/before-after" },
+  { name: "about", path: "/en/about" },
   { name: "contact", path: "/en/contact" },
 ];
 

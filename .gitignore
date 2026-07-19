@@ -50,3 +50,10 @@ next-env.d.ts
 # local verification artifacts
 /.playwright-mcp/
 /*.png
+
+# claude-infra local/session artifacts (repo-card.json stays tracked)
+.claude/audit.log
+.claude/decision-audit.jsonl
+.claude/worktrees/
+.claude/decisions/
+.claude/sentinel-reports/

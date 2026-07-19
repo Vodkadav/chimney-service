@@ -30,8 +30,9 @@ it is safe to store as a public env var.
 2. **Import** the `Vodkadav/chimney-service` repository. Vercel auto-detects
    Next.js — no build settings to change.
 3. Under **Environment Variables**, add:
-   - `NEXT_PUBLIC_SITE_URL` → your eventual public URL (e.g.
-     `https://chimney-service.vercel.app`; update it once a domain is attached).
+   - `NEXT_PUBLIC_SITE_URL` → optional; the code fallback in `data/site.ts` is
+     already the correct live URL (`https://chimney-service-cancun.vercel.app`).
+     Only set this once a custom domain is attached, then point it there.
    - `NEXT_PUBLIC_WEB3FORMS_KEY` → the key from step 1.
 4. Click **Deploy**. Every push to `main` then auto-deploys; pull requests get
    preview URLs.
