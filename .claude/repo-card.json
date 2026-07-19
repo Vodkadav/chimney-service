@@ -1,0 +1,5 @@
+{
+  "description": "Bilingual (EN/ES) Next.js 16 marketing site for Nuevo Amanecer, an industrial HVAC/duct ventilation cleaning and preventive-maintenance company serving Cancun and Merida. Reframed from the 'Riviera Hearth' chimney-service template; next-intl i18n, Web3Forms contact form, SEO, deployed on Vercel.",
+  "install": ["npm install"],
+  "run": ["npm run dev"]
+}
