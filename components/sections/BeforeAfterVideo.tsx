@@ -1,7 +1,10 @@
 import { useTranslations } from "next-intl";
 import { Clapperboard } from "lucide-react";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { SpeedVideo, type SpeedOption } from "@/components/features/SpeedVideo";
 import { cleaningVideo } from "@/data/gallery";
+
+const PLAYBACK_RATES = [1, 2, 3, 4];
 
 function VideoCell({
   label,
@@ -9,12 +12,16 @@ function VideoCell({
   src,
   poster,
   caption,
+  speedLabel,
+  speedOptions,
 }: {
   label: string;
   labelClassName: string;
   src: string;
   poster: string | null;
   caption: string;
+  speedLabel: string;
+  speedOptions: SpeedOption[];
 }) {
   return (
     <figure className="border-border-subtle bg-surface relative overflow-hidden rounded-3xl border shadow-[0_30px_80px_-40px_rgba(33,26,21,0.45)]">
@@ -23,17 +30,13 @@ function VideoCell({
       >
         {label}
       </span>
-      <video
-        controls
-        muted
-        playsInline
-        preload="metadata"
+      <SpeedVideo
+        src={src}
         poster={poster ?? undefined}
-        aria-label={caption}
-        className="aspect-video w-full bg-black object-cover"
-      >
-        <source src={src} type="video/mp4" />
-      </video>
+        caption={caption}
+        speedLabel={speedLabel}
+        speedOptions={speedOptions}
+      />
       <figcaption className="text-muted px-5 py-4 text-sm">{caption}</figcaption>
     </figure>
   );
@@ -41,15 +44,24 @@ function VideoCell({
 
 /**
  * "Before / After" cleaning footage on the gallery page. Both clips are self-hosted
- * MP4s (poster + click-to-play, muted by default). When `afterSrc` is null the after
- * cell shows a placeholder instead — see `cleaningVideo` in data/gallery.ts.
+ * MP4s (poster + click-to-play, muted), encoded at 3x real time with the camera's
+ * burned-in timestamp cropped off. When `afterSrc` is null the after cell shows a
+ * placeholder instead — see `cleaningVideo` in data/gallery.ts.
  */
 export function BeforeAfterVideo() {
   const t = useTranslations("VideoDemo");
 
+  const speedOptions: SpeedOption[] = PLAYBACK_RATES.map((rate) => ({
+    rate,
+    label: t("speedOption", { rate }),
+    ariaLabel: t("speedOptionLabel", { rate }),
+  }));
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-16">
       <SectionHeading title={t("title")} subtitle={t("subtitle")} />
+
+      <p className="text-muted mx-auto mt-4 max-w-2xl text-center text-sm">{t("speedNote")}</p>
 
       <div className="mt-12 grid gap-6 md:grid-cols-2">
         <VideoCell
@@ -58,6 +70,8 @@ export function BeforeAfterVideo() {
           src={cleaningVideo.beforeSrc}
           poster={cleaningVideo.beforePoster}
           caption={t("beforeCaption")}
+          speedLabel={t("speedLabel")}
+          speedOptions={speedOptions}
         />
 
         {cleaningVideo.afterSrc ? (
@@ -67,6 +81,8 @@ export function BeforeAfterVideo() {
             src={cleaningVideo.afterSrc}
             poster={cleaningVideo.afterPoster}
             caption={t("afterCaption")}
+            speedLabel={t("speedLabel")}
+            speedOptions={speedOptions}
           />
         ) : (
           <figure className="border-border-subtle bg-surface relative overflow-hidden rounded-3xl border">

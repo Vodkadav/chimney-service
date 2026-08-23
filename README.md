@@ -13,7 +13,7 @@ universities, malls and restaurants in Cancún and Mérida.
 ## Features
 
 - **Premium, responsive design** — steel-blue/cyan industrial theme (serif display
-  + Tailwind v4), full-bleed hero, slick page-to-page navigation, mobile menu.
+  - Tailwind v4), full-bleed hero, slick page-to-page navigation, mobile menu.
 - **Bilingual EN/ES** — `next-intl` with locale-prefixed routes (`/en`, `/es`),
   a flag language switcher, and every string translated. A test enforces
   key-parity between the two catalogs.
@@ -25,8 +25,10 @@ universities, malls and restaurants in Cancún and Mérida.
   (no backend); falls back to a `mailto:` link when no key is configured.
 - **Gallery carousel** — keyboard-accessible, captioned, with dot navigation,
   backed by the client's own real job photos.
-- **Before/after video** — self-hosted, trimmed MP4s of a real job (native HTML5
-  player, poster + click-to-play, muted).
+- **Before/after video** — self-hosted, trimmed MP4s of a real borescope duct
+  inspection (native HTML5 player, poster + click-to-play, muted), with
+  1×/2×/3×/4× playback-speed buttons. The clips are encoded at 3× real time so a
+  four-minute inspection runs in 80 seconds; the section copy says so.
 - **SEO** — per-locale metadata, `hreflang` alternates, dynamic OG image
   (`/og`), `sitemap.xml`, `robots.txt`.
 - **Accessible** — WCAG-AA contrast, visible focus, reduced-motion support,
@@ -54,15 +56,15 @@ npm run dev                  # http://localhost:3000  (redirects to /en)
 
 ## Scripts
 
-| Script | Purpose |
-| --- | --- |
-| `npm run dev` | Dev server |
-| `npm run build` / `start` | Production build / serve |
-| `npm run lint` | ESLint (next core-web-vitals + a11y + testing-library) |
-| `npm run typecheck` | `tsc --noEmit` |
-| `npm test` / `test:watch` | Vitest unit + component tests |
-| `npm run test:e2e` | Playwright (`npx playwright install` first) |
-| `npm run format` | Prettier |
+| Script                    | Purpose                                                |
+| ------------------------- | ------------------------------------------------------ |
+| `npm run dev`             | Dev server                                             |
+| `npm run build` / `start` | Production build / serve                               |
+| `npm run lint`            | ESLint (next core-web-vitals + a11y + testing-library) |
+| `npm run typecheck`       | `tsc --noEmit`                                         |
+| `npm test` / `test:watch` | Vitest unit + component tests                          |
+| `npm run test:e2e`        | Playwright (`npx playwright install` first)            |
+| `npm run format`          | Prettier                                               |
 
 ## Editing your content
 

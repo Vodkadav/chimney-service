@@ -194,7 +194,11 @@
     "after": "After",
     "beforeCaption": "Extraction duct heavily saturated with grease and soot, before our intervention.",
     "afterPlaceholder": "After footage coming soon",
-    "afterCaption": "The same duct after our extraction-duct cleaning intervention."
+    "afterCaption": "The same duct after our extraction-duct cleaning intervention.",
+    "speedLabel": "Speed",
+    "speedOption": "{rate}×",
+    "speedOptionLabel": "Play at {rate}× speed",
+    "speedNote": "Footage accelerated 3× — a four-minute inspection in 80 seconds. Use the speed buttons to go faster still."
   },
   "Videos": {
     "title": "Documented work",

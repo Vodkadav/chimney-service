@@ -22,8 +22,7 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
 - [x] **New sections:** Sectores atendidos (5) + Equipamiento (6)
 - [x] **Real client photos** wired into gallery / documented-work / about; hero uses
       matching industrial stock; placeholder testimonials removed (no real ones yet)
-- [x] **Real contacts:** business line (dnasolution66@gmail.com / +52 998 154 0967)
-      + Director (Lázaro Rondón) + Comercial (Marcos Machado)
+- [x] **Real contacts:** business line (dnasolution66@gmail.com / +52 998 154 0967) + Director (Lázaro Rondón) + Comercial (Marcos Machado)
 - [x] CI gate (lint → typecheck → test → build) green; 39 tests passing
 - [x] AI imagery — no-face thematic SDXL originals generated + wired: twilight rooftop
       AHUs as the **hero**, gleaming spiral ductwork as the **CTA-band** background
@@ -55,11 +54,27 @@ Mérida. Next.js 16 + next-intl + Tailwind v4, deployed on Vercel.
       Verified: a build with the bad env value now emits correct single-locale URLs.
       Optional cleanup: also delete/fix the Vercel env var (code default is already correct).
 - [x] **Gallery Before/After video section:** self-hosted, trimmed MP4s in
-      `/public/videos` (before = `start.ts` 1:42–2:07 / 25s, after = `1.ts`
-      0:20–0:50 / 30s), native HTML5 player (poster + click-to-play, muted);
+      `/public/videos`, native HTML5 player (poster + click-to-play, muted) with
+      1×/2×/3×/4× playback-speed buttons (`SpeedVideo` client component);
       `BeforeAfterVideo` section + `cleaningVideo` in `data/gallery.ts`, EN/ES copy
       under `VideoDemo`, `*.mp4` marked binary. Set `afterSrc: null` to revert the
       after cell to a placeholder.
+- [x] **Borescope footage swap (2026-08-23):** replaced both clips with the client's
+      duct-camera recordings (`recordingCleaning/before.mp4` 0:57–4:57,
+      `after.mp4` 0:00–4:00). Each is cropped to strip the camera's burned-in
+      timestamp (`crop=1671:940:124:140`, kept 16:9), encoded at 3× real time
+      (`setpts=PTS/3,fps=30`) to 720p with `hqdn3d` denoise — 80s and 8.9/5.6 MB,
+      down from ~82 MB/clip at 1×. Speed buttons multiply that 3× again; the
+      acceleration is disclosed in the `VideoDemo.speedNote` copy.
+      Rebuild (identical settings for both clips, so encoding never flatters the
+      "after"): `ffmpeg -i <src> -an -vf "crop=1671:940:124:140,setpts=PTS/3,fps=30,scale=1280:720,hqdn3d=4:4:8:8" -c:v libx264 -crf 31 -maxrate 1400k -bufsize 2000k -preset slow -pix_fmt yuv420p -movflags +faststart <out>`
+- [x] **4× playback stalled on the before clip (2026-08-23):** at CRF 27 that clip
+      averaged ~2.0 Mbps, so 4× demanded ~8 Mbps sustained; with `preload="metadata"`
+      it never buffered far enough ahead and looped `waiting`/`playing`, advancing at
+      ~1.35× and looking like the speed toggle was stuck. Fixed by the `-crf 31
+      -maxrate 1400k` re-encode above (887 kbps → whole clip buffers immediately).
+      `SpeedVideo` also listens for `ratechange` now, so the browser's own speed menu
+      can't leave the buttons showing a rate the video isn't playing at.
 - [ ] Site-review improvement pass (2026-07-11) — 2 hero-contrast fixes + JSON-LD,
       WhatsApp float, CTA phone, skip link, form privacy note. Sonnet-ready plan:
       `docs/IMPROVEMENT-PLAN.md`
@@ -103,9 +118,9 @@ Web3Forms dashboards** (no code needed):
    - Free plan = **one** recipient. A 2nd inbox needs the Pro plan (`ccemail`, `;`-sep) —
      or just add a Gmail auto-forward. Until the key is live, the form falls back to
      `mailto:`, so the site still works.
-2. *(Optional)* `NEXT_PUBLIC_SITE_URL` — not required anymore (code fallback is now the
+2. _(Optional)_ `NEXT_PUBLIC_SITE_URL` — not required anymore (code fallback is now the
    correct `-cancun` URL). Only set it if/when a **custom domain** is attached.
-3. *(Optional, later)* attach a paid custom domain in Vercel → **Settings → Domains**,
+3. _(Optional, later)_ attach a paid custom domain in Vercel → **Settings → Domains**,
    then set `NEXT_PUBLIC_SITE_URL` to it and redeploy.
 4. **Pending real content from the client** (no blocker to being live): exact street
    addresses, office hours, consented testimonials, social links, logo/brand mark —

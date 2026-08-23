@@ -194,7 +194,11 @@
     "after": "Después",
     "beforeCaption": "Ducto de extracción muy saturado de grasa y hollín, antes de nuestra intervención.",
     "afterPlaceholder": "Video del después próximamente",
-    "afterCaption": "El mismo ducto después de nuestra intervención de limpieza de ductos."
+    "afterCaption": "El mismo ducto después de nuestra intervención de limpieza de ductos.",
+    "speedLabel": "Velocidad",
+    "speedOption": "{rate}×",
+    "speedOptionLabel": "Reproducir a {rate}× de velocidad",
+    "speedNote": "Material acelerado 3×: una inspección de cuatro minutos en 80 segundos. Use los botones de velocidad para ir aún más rápido."
   },
   "Videos": {
     "title": "Trabajo documentado",
